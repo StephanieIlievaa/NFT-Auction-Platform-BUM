@@ -1,5 +1,5 @@
 ![banner.png](https://boomcdn.fra1.digitaloceanspaces.com/eb1541cf817d1c7ba6d621bbfdad316a.png)
-## NFT AUCTION BUM
+## NFT AUCTION PLATFORM BUM
  - BUM is a single page web app build with React, Next.js, JavaScript, and HTML & SASS.
 
 ## 🤔 How to use
