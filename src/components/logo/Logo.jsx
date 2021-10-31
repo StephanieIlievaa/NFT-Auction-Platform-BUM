@@ -1,6 +1,6 @@
 import React from "react";
 
- const Logo = ({ type = "default" }) => {
+ function Logo({ type = "default" }) {
   return type == "muted" ? (
     <img src="/images/logo-muted.svg" />
   ) : (
