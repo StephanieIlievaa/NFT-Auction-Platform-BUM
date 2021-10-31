@@ -7,7 +7,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import  Button  from "@mui/material/Button";
 
 
-  const Header = () => {
+ function Header() { 
   return (
     <div className={styles.wrapper}>
       <Container className={styles.container} maxWidth="xl">

@@ -4,7 +4,7 @@ import InputBase  from "@mui/material/InputBase";
 import  IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search"
 
-const SearchBar = () => {
+function SearchBar() {
   return (
 <Box  component="form"
       sx={{ display: 'flex', alignItems: 'center', width: 500 , height: '35px' , bgcolor: 'black' , borderRadius: 10 }}>
