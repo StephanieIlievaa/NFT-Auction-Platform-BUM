@@ -7,7 +7,7 @@ return (
     <Container className={styles.avatar} sx={{width: size, height: size}}>
 <img className={styles.image} src={url}></img>
 { verified 
-? <img className={styles.badge} src='../../../public/images/verified.svg'/> 
+? <img className={styles.badge} src={'../../../public/images/verified.svg'} /> 
 : null}
     </Container>
      </div>
