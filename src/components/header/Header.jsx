@@ -1,29 +1,35 @@
-  import Logo from "../logo/Logo.jsx";
-   import Container from "@mui/material/Container";
-   import Grid from "@mui/material/Grid"
-   import Paper from '@mui/material/Paper';
-   import { styled } from '@mui/material/styles';
-
-   const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
- 
-   function Header() {
-   
-   return (
-       <div>
- <Container maxWidth="xl">
-       <Logo type='muted'/>
-       </Container>
-     </div>
-   );
-   }
-
-   export default Header;
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Logo from "../logo/Logo";
+import Link from "../link/Link.jsx"
+import styles from "./Header.module.scss"
+import SearchBar from "../SearchBar/SearchBar";
+import  Button  from "@mui/material/Button";
 
 
+  const Header = () => {
+  return (
+    <div className={styles.wrapper}>
+      <Container className={styles.container} maxWidth="xl">
+        <Grid container direction='row' columnSpacing={5} sx={{ justifycontent: 'center' , display: 'contents' }}>
+          <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start' }}>
+            <Logo />
+          </Grid>
+          <Grid item className={styles.searchBar}>
+            <SearchBar />
+          </Grid>
+          <Grid item xs   sx={{ display: 'flex',
+          justifyContent: 'flex-start',
+          p: 1,
+          m: 1,  }}>
+            <Button component={Link} sx={{ color: '#e1e1fc' }}  noLinkStyle href="/">Home</Button>
+            <Button sx={{ color: '#e1e1fc' }} >Activity</Button>
+            <Button variant='contained' sx={{  color: '#e1e1fc' }}>Explore</Button>
+          </Grid>
+        </Grid>
+      </Container>
+    </div>
+  );
+}
 
-
+export default Header;
