@@ -1,0 +1,25 @@
+@use "../../styles/colors";
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+}
+.user {
+display:flex;
+flex-direction: row;
+}
+
+.name { 
+    color: colors.$text_primary;
+    font-size: 3rem;
+    font-weight: 800;
+   
+}
+
+.info {
+    color: colors.$text_secondary;
+    font-size: 0.875rem;
+    font-weight: normal;
+    
+}

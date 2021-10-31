@@ -10,6 +10,7 @@ import  Button  from "@mui/material/Button";
  function Header() { 
   return (
     <div className={styles.wrapper}>
+     
       <Container className={styles.container} maxWidth="xl">
         <Grid container direction='row' columnSpacing={5} sx={{ justifycontent: 'center' , display: 'contents' }}>
           <Grid item sx={{  display: 'contents' , justifyContent: 'flex-start' }}>
@@ -17,7 +18,7 @@ import  Button  from "@mui/material/Button";
           </Grid>
           <Grid item className={styles.searchBar}>
             <SearchBar />
-          </Grid>
+          </Grid> 
           <Grid item xs   sx={{ display: 'flex',
           justifyContent: 'flex-start',
           p: 1,
