@@ -1,7 +1,5 @@
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
-import { string } from 'prop-types';
-import Avatar from '../avatar/Avatar.jsx';
 
 //     name: String,
 //     "likes": Number,
