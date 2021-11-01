@@ -1,5 +1,27 @@
 @use "../../styles/colors";
+.wrapper{
+    padding: 0px;
 
-.wrapper {
-padding: 20px;
+}
+.avatar {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: absolute;
+    width: 192px;
+    height: 192px;
+    left: 882px;
+    top: 276px;
+}
+
+.badge {
+    position: absolute;
+    left: 53.65%;
+    right: 43.65%;
+    top: 21.68%;
+    bottom: 75.81%;
+    border: 2px solid #181828;
 }
