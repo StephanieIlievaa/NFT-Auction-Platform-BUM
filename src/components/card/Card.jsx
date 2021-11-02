@@ -1,5 +1,14 @@
-import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import CardWrap from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
+import Avatar from '../avatar/Avatar.jsx'
+import CardContent from '@mui/material/CardContent';
+import styles from './Card.module.scss'
+import Chip from '@mui/material/Chip';
+import millify from 'millify';
+import { useState, useEffect } from 'react';
+import Favorite from '@mui/icons-material/Favorite';
+
 
 //     name: String,
 //     "likes": Number,
@@ -12,13 +21,36 @@ import CardHeader from '@mui/material/CardHeader';
 // "verified": String
 //     }
 
-function Card({name="", like = 0, mediaUrl="", user = {}, price = 0, currency = 0 }) {
+function Card({name, likes, mediaUrl, user={}, price, currency, time = 0}) {
+
+const [isActive, setActive] = useState(false);
+
+console.log(isActive);
+    const likesHandleBtn = () => {
+
+    }
+
     return(
-<Card sx={{maxWidth: 500}}>
+<CardWrap crassName={styles.wrapper} sx={{maxWidth: 500}}>
     <CardHeader 
-    avatar={<Avatar/>}></CardHeader>
-</Card>
+    avatar={<Avatar user={user.avatarUrl} verified={user.verified}/>}></CardHeader>
+    <CardMedia crassName={styles.media} component="img" image={mediaUrl}></CardMedia>
+    <CardContent crassName={styles.content}>
+        <div>{name}</div>
+        <div>{price} {currency}</div>
+        <Chip 
+        className={styles.secondary}
+        icon={<Favorite />}
+        onClick={() => setActive(!isActive)}>
+        </Chip>
+    </CardContent>
+</CardWrap>
     )
-    
+}
+
+function LiveCard({time = 0}) {
+return(
+    <div></div>
+);
 }
 export default Card;

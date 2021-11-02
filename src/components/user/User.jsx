@@ -1,5 +1,5 @@
 import styles from "./User.module.scss"
-
+import Avatar from "../avatar/Avatar.jsx"
 import Box from "@mui/material/Box"
 
 function User({ name='', info='', avatar='', size = 55, verified = false }) {
