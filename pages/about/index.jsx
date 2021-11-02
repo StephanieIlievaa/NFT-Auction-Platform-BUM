@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header.jsx"
-import User from "../../src/components/user/User.jsx";
+import Card from "../../src/components/card/Card.jsx"
 
 export default function About() {
   return (
@@ -12,6 +12,7 @@ export default function About() {
         <Grid item>
           <Header>
           </Header>
+          <Card/>
         </Grid>
       </Grid>
     </Container>
