@@ -1,10 +1,10 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header.jsx";
 import Trending from "../../src/components/trending-section/TrendingSection.jsx";
 import LiveAuction from "../../src/components/live-auction/LiveAuction.jsx";
+import Footer from "../../src/components/footer/Footer.jsx";
 
 export default function About() {
   const cards = [
@@ -110,6 +110,7 @@ export default function About() {
           <Header></Header>
         <Trending cards={cards}/>
            <LiveAuction cards={liveCards}/>
+           <Footer/>
         </Grid>
       </Grid>
     </Container>
