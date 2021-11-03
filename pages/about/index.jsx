@@ -3,8 +3,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Header from "../../src/components/header/Header.jsx";
-import Card from "../../src/components/card/Card.jsx";
 import Trending from "../../src/components/trending-section/TrendingSection.jsx";
+import LiveAuction from "../../src/components/live-auction/LiveAuction.jsx";
 
 export default function About() {
   const cards = [
@@ -53,13 +53,63 @@ export default function About() {
       currency: "ETH",
     },
   ];
+  const liveCards = [
+    {
+      name: "Suspect of Change",
+      likes: 1100,
+      mediaUrl: "images/nft.jpg",
+      user: {
+        avatarUrl: "images/avatar.png",
+        verified: true,
+      },
+      price: "10",
+      currency: "ETH",
+      timeLeft: 200,
+    },
+    {
+      name: "Strugle of Generousity",
+      likes: 1100,
+      mediaUrl: "images/nft.jpg",
+      user: {
+        avatarUrl: "images/avatar.png",
+        verified: true,
+      },
+      price: "10",
+      currency: "ETH",
+      timeLeft: 200,
+    },
+    {
+      name: "Humor of Psychology",
+      likes: 1100,
+      mediaUrl: "images/nft.jpg",
+      user: {
+        avatarUrl: "images/avatar.png",
+        verified: true,
+      },
+      price: "10",
+      currency: "ETH",
+      timeLeft: 200,
+    },
+    {
+      name: "Unfortunate Insanity",
+      likes: 1100,
+      mediaUrl: "images/nft.jpg",
+      user: {
+        avatarUrl: "images/avatar.png",
+        verified: true,
+      },
+      price: "10",
+      currency: "ETH",
+      timeLeft: 200,
+    },
+  ];
   return (
     <Container maxWidth="sm">
       <Grid container justifyContent="center">
         <Grid item>
           <Header></Header>
         <Trending cards={cards}/>
-           
+           <LiveAuction cards={liveCards}/>
         </Grid>
       </Grid>
     </Container>

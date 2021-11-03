@@ -1,8 +1,7 @@
-import { Container, Grid, Select, MenuItem } from "@mui/material";
-import Card from "../card/Card";
+import Card from '../card/Card.jsx'
 import { useState } from "react";
 import styles from "./TrendingSection.module.scss";
-
+import { Container, Grid, Select, MenuItem } from "@mui/material";
 function Trending({ cards }) {
   const [time, setTime] = useState("");
 
