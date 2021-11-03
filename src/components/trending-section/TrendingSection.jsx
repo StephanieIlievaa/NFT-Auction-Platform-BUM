@@ -1,43 +1,43 @@
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
+import { Container, Grid, Select, MenuItem } from "@mui/material";
+import Card from "../card/Card";
+import { useState } from "react";
 import styles from "./TrendingSection.module.scss";
-import Card from "../card/Card.jsx";
-import  MenuItem from "@mui/material/MenuItem";
-import setState from 'react';
-import Select from "@mui/material/Select";
 
-function Trending({props}) {
+function Trending({ cards }) {
+  const [time, setTime] = useState("");
 
-const [time, setTime] = setState('');
-
- //handler for the select menu 
-const selectMenuHandler = (e) => {
-   setTime(e.target.value)
-
-}
-
-  let cards = props.data.map((card, i) => {
-    return <Card card={card} key={i} />;
-  });
+  const selectMenuHandler = (e) => {
+    setTime(e.target.value);
+  };
 
   return (
-    <div>
-      <Container>
-        <Grid container>
-          <Grid>
-            <div>Trending</div>
+    <div className={styles.wrapper}>
+      <Container className={styles.container} maxWidth="xl">
+        <Grid container className={styles.gridContainer}>
+          <Grid item className={styles.titleWrapper}>
+            <div className={styles.title}>Trending</div>
           </Grid>
-          <Grid>
-            <Select 
-            onChange={selectMenuHandler}
-            value={time}>
+          <Grid item className={styles.selectWrapper}>
+            <Select
+              className={styles.select}
+              value={time}
+              onChange={selectMenuHandler}
+              displayEmpty
+              inputProps={{ "aria-label": "Without label" }}
+            >
               <MenuItem value="">This week</MenuItem>
               <MenuItem value={10}>Today</MenuItem>
               <MenuItem value={20}>This month</MenuItem>
               <MenuItem value={30}>This year</MenuItem>
             </Select>
           </Grid>
-          <Grid className={styles.cards}>{cards}</Grid>
+        </Grid>
+        <Grid container spacing={2} item className={styles.cards} xl>
+          {cards.map((card) => (
+            <Grid item xs={3} md={3}>
+              <Card key={card.key} {...card} />
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </div>

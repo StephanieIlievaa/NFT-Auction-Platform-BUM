@@ -8,53 +8,39 @@ import Chip from "@mui/material/Chip";
 import millify from "millify";
 import { useState, useEffect } from "react";
 import Favorite from "@mui/icons-material/Favorite";
+import { positions } from "@mui/system";
 
-//     name: String,
-//     "likes": Number,
-//     "mediaUrl": String,
-//     "user":{
-//         "avatarUrl": String,
-//         "verified": Boolean
-//     },
-// "price": String,
-// "verified": String
-//     }
-
-function Card({ name, likes, mediaUrl, user = {}, price, currency, time = 0 }) {
+function Card({ name, likes, mediaUrl, user = {}, price, currency, timeLeft = 0 }) {
   const [color, setColor] = useState("outlined");
-    
- 
-  console.log(setColor);
+
   const likesHandleBtn = () => {
-    if (color == 'filled') {
-      setColor('outlined');
-    } else {
-      setColor('filled');
+    {
+      color == "filled" ? setColor("outlined") : setColor("filled");
     }
-  }
+  };
   return (
-    <CardWrap crassName={styles.wrapper} sx={{ maxWidth: 500 }}>
+    <CardWrap className={styles.wrapper} sx={{ maxWidth: 500 }}>
       <CardHeader
         avatar={<Avatar user={user.avatarUrl} verified={user.verified} />}
       ></CardHeader>
       <CardMedia
-        crassName={styles.media}
+        className={styles.media}
         component="img"
         image={mediaUrl}
       ></CardMedia>
-      <CardContent crassName={styles.content}>
-        <div>{name}</div>
-        <div>
-          {price} {currency}
+      <CardContent className={styles.content}>
+        <div className={styles.content__info}>
+          <h4>{name}</h4>
+          <p>~{price} {currency}</p>
         </div>
         <Chip
-          className={styles.secondary}
-          label={millify.likes}
+          className={styles.chip}
+          label={millify(likes)}
           icon={<Favorite />}
           onClick={likesHandleBtn}
           variant={color}
-          color='success'
-        ></Chip>
+          color="success"
+        />
       </CardContent>
     </CardWrap>
   );

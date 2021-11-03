@@ -1,35 +1,36 @@
 @use "../../styles/colors";
 
+.wrapper {
+  padding: 0rem 1rem;
+}
+
 .card {
-  height: 600px;
-  width: 350px;
   display: flex;
   flex-direction: column;
 }
+
 .media {
-  border-radius: 5%;
-  margin-left: 12px;
-  width: 350px !important;
-  height: 400px;
+  border-radius: 15px !important;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
+  padding: 15px !important;
+
+  &__info {
+    h4 {
+      margin: 0;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+      color: #24f25e;
+      font-weight: bold;
+    }
+  }
 }
+
 .chip {
-  &__primary {
-    background-color: white;
-  }
-  &__secondary {
-    background-color: red;
-  }
+  align-self: center;
 }
-
-
-  .primary {
-    background-color: white;
-  }
-
-  .secondary {
-    background-color: red;
-  }
