@@ -8,9 +8,20 @@ import Chip from "@mui/material/Chip";
 import millify from "millify";
 import { useState, useEffect } from "react";
 import Favorite from "@mui/icons-material/Favorite";
-import { positions } from "@mui/system";
+import Countdown from "react-countdown";
+import LiveIcon from "@mui/icons-material/FiberManualRecord";
+import Grid from "@mui/material/Grid";
 
-function Card({ name, likes, mediaUrl, user = {}, price, currency, timeLeft = 0 }) {
+function Card({
+  name,
+  likes,
+  mediaUrl,
+  user = {},
+  price,
+  currency,
+  timeLeft = 0,
+}) {
+
   const [color, setColor] = useState("outlined");
 
   const likesHandleBtn = () => {
@@ -23,6 +34,7 @@ function Card({ name, likes, mediaUrl, user = {}, price, currency, timeLeft = 0 
       <CardHeader
         avatar={<Avatar user={user.avatarUrl} verified={user.verified} />}
       ></CardHeader>
+      {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
       <CardMedia
         className={styles.media}
         component="img"
@@ -31,7 +43,9 @@ function Card({ name, likes, mediaUrl, user = {}, price, currency, timeLeft = 0 
       <CardContent className={styles.content}>
         <div className={styles.content__info}>
           <h4>{name}</h4>
-          <p>~{price} {currency}</p>
+          <p>
+            ~{price} {currency}
+          </p>
         </div>
         <Chip
           className={styles.chip}
@@ -46,7 +60,22 @@ function Card({ name, likes, mediaUrl, user = {}, price, currency, timeLeft = 0 
   );
 }
 
-function LiveCard({ time = 0 }) {
-  return <div></div>;
+function LiveCard({ timeLeft = 0 }) {
+  return (
+    <div className={styles.liveCard}>
+      <Grid className={styles.grid}>
+        <Grid className={styles.badge}>
+          <LiveIcon color="primary" />
+          <div className={styles.live}>Live</div>
+        </Grid>
+        <Grid className={styles.counterWrapper}> 
+            <Countdown
+              className={styles.counter}
+              date={Date.now() + timeLeft * 10000}
+            />
+        </Grid>
+      </Grid>
+    </div>
+  );
 }
 export default Card;
