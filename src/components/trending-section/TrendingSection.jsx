@@ -1,5 +1,6 @@
 import Card from '../card/Card.jsx'
 import { useState } from "react";
+import { ReactFragment } from 'react';
 import styles from "./TrendingSection.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 function Trending({ cards }) {
@@ -10,7 +11,8 @@ function Trending({ cards }) {
   };
 
   return (
-    <div className={styles.wrapper}>
+    
+    <div className={styles.wrapper} >
       <Container className={styles.container} maxWidth="xl">
         <Grid container className={styles.gridContainer}>
           <Grid item className={styles.titleWrapper}>
@@ -34,7 +36,7 @@ function Trending({ cards }) {
         <Grid container spacing={2} item className={styles.cards} xl>
           {cards.map((card) => (
             <Grid item xs={3} md={3}>
-              <Card key={card.key} {...card} />
+              <Card  {...card} key={card.key} />
             </Grid>
           ))}
         </Grid>

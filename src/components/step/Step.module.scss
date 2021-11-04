@@ -1,0 +1,34 @@
+@use "../../styles/colors.scss";
+.numWrapper {
+    position: absolute;
+width: 187px;
+height: 215px;
+
+}
+.number {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 100.333px;
+line-height: 215px;
+background-color: rgba(29, 25, 60);
+text-align: center;
+border-radius: 30px 0px 0px 30px;
+opacity: 90px;
+}
+
+.title {
+    position: absolute;
+    width: 163px;
+    height: 22.86px;
+    left: 222px;
+    top: 32px;
+}
+
+.description {
+    position: absolute;
+    width: 284px;
+height: 84px;
+left: 222px;
+top: 60px;
+}
