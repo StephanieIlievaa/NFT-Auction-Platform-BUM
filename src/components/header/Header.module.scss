@@ -1,36 +1,76 @@
 @use "../../styles/colors";
 
 .wrapper {
- padding: 0px;
+  padding: 17px;
+  background-color: #181828;
+  position: absolute;
+  height: 98px;
+  width: 1920px;
+  left: 0px;
+  top: 0px;
 }
 .container {
-  display: flex !important;
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  align-items: center-end;
-  justify-content: space-evenly;
+  max-width: 81% !important;
+  
 }
-.searchBar {
- 
-  position:static;
- 
-  padding-top: 30px;
-  padding-right: 50px;
 
-  /* base-primary-cotrast */
-  background: #0c0c14;
+.searchBar {
+  padding: 10px;
+  position: absolute;
+  left: 25.52%;
+  right: 44.27%;
+  top: 22.45%;
+  bottom: 25.51%;
+  width: 580px;
+  height: 51px;
   border-radius: 30px;
 }
 
 .logo {
+  height: 62px;
+  width: 135px;
+  left: 251px;
+  top: 19px;
+  border-radius: 0px;
+  
+}
+.homeBtn {
+
   position: absolute;
-  left: 1.07%;
-  right: 79.9%;
-  top: 7%;
-  bottom: 26.53%;
+  left: 69.22%;
+  right: 28.49%;
+  top: 30.8%;
+  bottom: 42.86%;
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
 }
 
+.activityBtn {
+  position: absolute;
+  left: 74.32%;
+  right: 22.81%;
+  top: 39.8%;
+  bottom: 42.86%;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+  
+}
 
+.exploreBtn {
+  align-items: center;
+  padding: 20px 38px;
+  flex-direction: row;
+  position: absolute;
+  left: 79.32%;
+  right: 13.12%;
+  top: 22.45%;
+  bottom: 22.45%;
+}

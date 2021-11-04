@@ -1,0 +1,79 @@
+@use "../../styles/colors";
+
+.wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container {
+  background-color: #4e24f2;
+  width: 1920px;
+  height: 639px;
+  top: 1847px;
+  border-radius: 0px;
+  max-width: 1920px !important;
+}
+.titleHow {
+  position: relative;
+  width: 517.2px;
+  height: 72.54px;
+  left: 200px;
+  top: 200px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 73px;
+  font-style: normal;
+}
+.paragraph {
+  position: relative;
+  width: 517.2px;
+  height: 72.54px;
+  top: 200px;
+  left: 200px;
+}
+
+.buttonLearn {
+  position: relative;
+  left: 200px;
+  top: 240px;
+  border-radius: 30px;
+  padding: 20px, 38px, 20px, 38px;
+  background-color: colors.$text_primary !important;
+  color: colors.$primary_main !important;
+}
+
+.items {
+
+  background-color: colors.$background_paper;
+  border-radius: 30px;  
+}
+.item:nth-child(1) {
+    height: 215px;
+width: 580px;
+left: 1090px;
+top: 771px;
+position: absolute;
+ border-radius: 30px;
+ background-color: colors.$background_paper;
+}
+.item:nth-child(2) {
+    height: 215px;
+    width: 580px;
+    left: 1090px;
+    top: 1013px;
+    position: absolute;
+     border-radius: 30px;
+     background-color: colors.$background_paper;
+}
+.item:nth-child(3) {
+    height: 215px;
+    width: 580px;
+    left: 1090px;
+    top: 1255px;
+    position: absolute;
+     border-radius: 30px;
+     background-color: colors.$background_paper;
+}
+
+
+
+
