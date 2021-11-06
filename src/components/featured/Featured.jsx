@@ -6,11 +6,10 @@ import { useRouter } from "next/router";
 function Featured({ items }) {
   return (
     <div>
-      <Container className={styles.container} maxWidth="sm">
+      <Container className={styles.container}>
         <ImageList
           className={styles.imageList}
-          sx={{ width: 1500, height: 
-            482 }}
+          
           cols={6}
           rowHeight={120}
         >

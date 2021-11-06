@@ -11,8 +11,8 @@ function Header() {
     <div className={styles.wrapper} >
       <Container className={styles.container} >
         <Grid>
-          <Grid>
-            <Logo className={styles.logo} />
+          <Grid className={styles.logo}>
+            <Logo />
           </Grid>
           <Grid item className={styles.searchBar}>
             <SearchBar />
