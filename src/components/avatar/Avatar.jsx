@@ -10,13 +10,11 @@ function Avatar({ size = 90, url, verified = false }) {
       >
         <img
           className={styles.image}
-          src={
-            "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554__480.jpg"
-          }
+          src={url}
         />
-        {verified ? (
+        {verified ? 
           <img className={styles.badge} src={"/images/verified.svg"} />
-        ) : null}
+        : null}
       </Container>
     </div>
   );

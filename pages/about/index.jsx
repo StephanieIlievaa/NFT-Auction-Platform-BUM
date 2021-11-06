@@ -6,7 +6,7 @@ import Trending from "../../src/components/trending-section/TrendingSection.jsx"
 import LiveAuction from "../../src/components/live-auction/LiveAuction.jsx";
 import Footer from "../../src/components/footer/Footer.jsx";
 import How from "../../src/components/how/How.jsx";
-import Featured from "../../src/featured/Featured.jsx";
+import Featured from "../../src/components/featured/Featured.jsx";
 export default function About() {
   const cards = [
     {
@@ -176,6 +176,7 @@ const items = [
 },
 ];
 
+ 
   return (
     <Container maxWidth="lf">
       <Grid container justifyContent="center">

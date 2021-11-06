@@ -1,0 +1,19 @@
+.container {
+    max-width: 1512px !important;
+    position: relative;
+    top: 140px;
+}
+.imageList {
+    gap: 15px !important; 
+    height: 500px !important;
+    width:522px !important;
+}
+.image {
+      border-radius: 15px !important;
+      
+}
+
+.imageList:first-child {
+     margin-left: 0px;
+     border-radius: 15px 15px 15px 15px !important;
+}
