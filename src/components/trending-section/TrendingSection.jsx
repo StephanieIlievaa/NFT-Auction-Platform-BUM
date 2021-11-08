@@ -1,9 +1,8 @@
 import Card from '../card/Card.jsx'
 import { useState } from "react";
-import { ReactFragment } from 'react';
 import styles from "./TrendingSection.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
-function Trending({ cards }) {
+function Trending({ cards = [] }) {
   const [time, setTime] = useState("");
 
   const selectMenuHandler = (e) => {

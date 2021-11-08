@@ -1,0 +1,26 @@
+.container {
+  padding: 0px;
+}
+
+.id {
+  background-color: rgba(#4e24f2, 40%);
+  width: 79px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+}
+
+
+.user {
+  background-color: rgba(21, 15, 52, 80%);
+  width: 265px;
+  height: 76px;
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+}

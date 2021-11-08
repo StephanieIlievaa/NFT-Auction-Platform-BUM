@@ -1,0 +1,41 @@
+import styles from "./TopCollectors.module.scss";
+import { useState } from "react";
+import { Container, Grid, Select, MenuItem } from "@mui/material";
+import CollectorsColumn from "../collectorsColumn/CollectorsColumn.jsx";
+import _ from "lodash";
+function TopCollectors({ collectors = [] }) {
+  const [time, setTime] = useState("");
+  const selectMenuHandler = (e) => {
+    setTime(e.target.value);
+  };
+  return (
+    <div maxWidth="xl" className={styles.wrapper}>
+      <Container container direction="row" className={styles.gridContainer}>
+        <Grid container direction="row" className={styles.gridContainer}>
+          <Grid item className={styles.header}>
+            <div className={styles.title}>Top Collectors</div>
+            <Select
+              className={styles.select}
+              style={{ width: "250px" }}
+              value={time}
+              onChange={selectMenuHandler}
+              displayEmpty
+              inputProps={{ "aria-label": "Without label" }}
+            >
+              <MenuItem value="">This week</MenuItem>
+              <MenuItem value={10}>Today</MenuItem>
+              <MenuItem value={20}>This month</MenuItem>
+              <MenuItem value={30}>This year</MenuItem>
+            </Select>
+          </Grid>
+          <Grid item className={styles.collectors} xl>
+            {_.chunk(collectors, 3).map((collector, index) => (
+              <CollectorsColumn key={index} items={collector} />
+            ))}
+          </Grid>
+        </Grid>
+      </Container>
+    </div>
+  );
+}
+export default TopCollectors;
