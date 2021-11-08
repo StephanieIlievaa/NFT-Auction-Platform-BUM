@@ -1,0 +1,89 @@
+  
+  {
+      "collectors": [
+    {
+      "name": "terika77",
+      "nftsCount": 134,
+      "avatar": "images/avatar.png",
+      "verified": true,
+      "id": 1
+    },
+    {
+      "name": "brendan_1",
+      "nftsCount": 98,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 2
+    },
+    {
+      "name": "damiann",
+      "nftsCount": 97,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 3
+    },
+    {
+      "name": "frederika_a",
+      "nftsCount": 71,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 4
+    },
+    {
+      "name": "m3lvin",
+      "nftsCount": 62,
+      "avatar": "images/avatar.png",
+      "verified": true,
+      "id": 5
+    },
+    {
+      "name": "jaimi_gg",
+      "nftsCount": 59,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 6
+    },
+    {
+      "name": "tyr",
+     "nftsCount": 48,
+     "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 7
+    },
+    {
+      "name": "tammy8998",
+      "nftsCount": 47,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 8
+    },
+    {
+      "name": "tortoise",
+      "nftsCount": 47,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 9
+    },
+    {
+      "name": "toadnft",
+      "nftsCount": 35,
+      "avatar": "images/avatar.png",
+      "verified": true,
+      "id": 10
+    },
+    {
+      "name": "goldfis555",
+      "nftsCount": 32,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 11
+    },
+    {
+      "name": "pigeon1",
+     "nftsCount": 31,
+      "avatar": "images/avatar.png",
+      "verified": false,
+      "id": 12
+    }
+  ]
+}

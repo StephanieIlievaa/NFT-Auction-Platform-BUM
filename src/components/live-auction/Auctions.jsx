@@ -1,9 +1,9 @@
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 import Card from '../card/Card.jsx'
 import { useState } from "react";
-import styles from "./LiveAuction.module.scss";
+import styles from "./Auctions.module.scss";
 
-function LiveAuction({cards}) {
+function Auctions({cards = []}) {
     const [time, setTime] = useState("");
 
     const selectMenuHandler = (e) => {
@@ -43,4 +43,4 @@ function LiveAuction({cards}) {
       </div>
     );
 }
-export default LiveAuction;
+export default Auctions;

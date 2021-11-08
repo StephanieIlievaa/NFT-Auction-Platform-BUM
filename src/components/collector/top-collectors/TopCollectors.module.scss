@@ -1,0 +1,26 @@
+.wrapper {
+  padding-top: 100px;
+  position: inherit;
+  width: 1574px;
+}
+.container {
+  padding: 10px;
+}
+.gridContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-weight: bold;
+  font-size: 4rem;
+}
+.collectors {
+  display: -webkit-inline-box;
+  gap: 20px;
+}

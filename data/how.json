@@ -1,0 +1,30 @@
+ 
+ {
+ "how" : {
+    "title": "HOW IT WORKS",
+    "description":
+      "Discover, collect, and sell extraordinary NFT's on the world's first & largest NFT marketplace. There are three things you'll need in place to open your account and start bying or selling NFT's on BUM.",
+    "items":  [
+        {
+          "number": 1,
+          "title": "DIGITAL CURRENCY",
+          "description":
+            "You can get ETH, the digital currency that fuels transactions on the Ethereum blockchain, from a digital currency exchange."
+        },
+        {
+          "number": 2,
+          "title": "CRYPTO WALLET",
+          "description":
+            "A crypto wallet, such as MetaMask, stores your ETH and processes transactions on the Ethereum blockchain."
+        },
+        {
+          "number": 3,
+          "title": "BUM.",
+          "description":
+            "Let's connect yout wallet to BUM, edit your profile, and begin interacting in tha space."
+        }
+      ],
+
+    "link": "href"
+  }
+}
