@@ -20,6 +20,7 @@ function Card({
   price,
   currency,
   timeLeft = 0,
+ 
 }) {
 
   const [color, setColor] = useState("outlined");
@@ -32,7 +33,7 @@ function Card({
   return (
     <CardWrap className={styles.wrapper} sx={{ maxWidth: 500 }}>
       <CardHeader
-        avatar={<Avatar user={user.avatarUrl} verified={user.verified} />}
+        avatar={<Avatar size={33} url={user.avatarUrl} verified={user.verified} />}
       ></CardHeader>
       {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
       <CardMedia

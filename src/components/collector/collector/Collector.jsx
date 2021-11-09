@@ -7,13 +7,12 @@ import User from "../../user/User.jsx";
 // others => rgba(21, 15, 52) == #150F34
 
 function Collector({ items = [], type = "" }) {
-
   const Opacity = () => {
-  if( type == "light"){
-      return 'rgba(28, 18, 73)'
-} 
-  }
-  
+    if (type == "light") {
+      return "rgba(28, 18, 73)";
+    }
+  };
+
   return (
     <div className={styles.container} style={{ backgroundColor: Opacity() }}>
       <Grid container direction="row" className={styles.column}>
@@ -23,9 +22,9 @@ function Collector({ items = [], type = "" }) {
         <Grid item className={styles.user}>
           {" "}
           <User
+            size={53}
             name={items.name}
             info={items.nftsCount}
-            size={53}
             avatar={items.avatar}
             verified={items.verified}
           />
