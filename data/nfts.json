@@ -15,7 +15,7 @@
       "likes": 1000,
       "mediaUrl": "images/nft.jpg",
       "user": {
-       " avatarUrl": "images/avatar.png",
+       "avatarUrl": "images/avatar.png",
         "verified": true
       },
       "price": "2.3",
