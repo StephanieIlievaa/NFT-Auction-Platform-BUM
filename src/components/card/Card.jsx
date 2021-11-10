@@ -47,10 +47,12 @@ export default function Card({
       <CardContent className={styles.content}>
         <Box className={styles.content__info}>
           <h4 className={styles.title}>{name}</h4>
-          <p className={styles.price}>{price} {currency}</p>
+          <p className={styles.price}>
+            {price} {currency}
+          </p>
         </Box>
         <Stack>
-          <Chip
+            <Chip
             className={styles.likes}
             label={millify(likes)}
             icon={<Favorite />}
