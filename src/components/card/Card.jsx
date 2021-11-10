@@ -13,12 +13,12 @@ import LiveIcon from "@mui/icons-material/FiberManualRecord";
 import Grid from "@mui/material/Grid";
 
 export default function Card({
-  name,
-  likes,
-  mediaUrl,
+  name = '',
+  likes = 0,
+  mediaUrl = '',
   user = {},
-  price,
-  currency,
+  price = 0,
+  currency = '',
   timeLeft = 0,
  
 }) {
@@ -44,12 +44,12 @@ export default function Card({
       <CardContent className={styles.content}>
         <div className={styles.content__info}>
           <h4>{name}</h4>
-          <p>
+          <p className={styles.price}>
             ~{price} {currency}
           </p>
         </div>
         <Chip
-          className={styles.chip}
+          className={styles.likes}
           label={millify(likes)}
           icon={<Favorite />}
           onClick={likesHandleBtn}
