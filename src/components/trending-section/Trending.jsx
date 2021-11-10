@@ -1,6 +1,6 @@
 import Card from '../card/Card.jsx'
 import { useState } from "react";
-import styles from "./TrendingSection.module.scss";
+import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
