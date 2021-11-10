@@ -1,14 +1,9 @@
 @use "../../styles/colors";
 
-.wrapper {
+.card {
   padding: 0rem 1rem;
   background-color: rgba(36, 242, 94, 0.1) !important;
 
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
 }
 
 .media {

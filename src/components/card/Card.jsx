@@ -31,7 +31,7 @@ export default function Card({
     }
   };
   return (
-    <CardWrap className={styles.wrapper} sx={{ maxWidth: 500, color: '' }}>
+    <CardWrap className={styles.card} sx={{ maxWidth: 500, color: '' }}>
       <CardHeader
         avatar={<Avatar size={33} url={user.avatarUrl} verified={user.verified} />}
       ></CardHeader>
@@ -43,14 +43,14 @@ export default function Card({
       ></CardMedia>
       <CardContent className={styles.content}>
         <div className={styles.content__info}>
-          <h4>{name}</h4>
+          <h4 className={styles.title}>{name}</h4>
           <p className={styles.price}>
-            ~{price} {currency}
+            {price  + ' ' +  currency}
           </p>
         </div>
         <Chip
           className={styles.likes}
-          label={millify(likes)}
+          label={ millify(likes) }
           icon={<Favorite />}
           onClick={likesHandleBtn}
           variant={color}

@@ -7,7 +7,7 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-      "price": "1",
+      "price": "~1",
       "currency": "ETH"
     },
     {
@@ -18,7 +18,7 @@
        "avatarUrl": "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1637539200&Signature=MzdTSHremRJCuhGEOxsillg0QsqbueCn0stAbxPFUEJdCoOZL5IlBZSyPZeTdaQbz2Mxljn1zJ6nDXlD43RW3KzirzK1FFyYYqNzADEM2vXWoEh92JCt9AYmEkFV4kLfUsEJ9tdDnwXwjLopcSOyNFtezXWeKn02Q4xadf~YnE1t2QqDjDbY3aFwhT2QbqTAgQuXHwlRDy2BxixZCeCPmjz2OVRnLOtS2unb9PRAV9RVBQNIIdr0StjYuV1bl9zf-H1znZsvQZBI7ZaeaADYW36EEVB~Dc50pXccpyf0CtQ2nknjbRQUetH~ab15ve8ke5yEQcRmPk89umx0yBu1xA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
         "verified": false
       },
-      "price": "2.3",
+      "price": "~2.3",
       "currency": "ETH"
     },
     {
@@ -29,7 +29,7 @@
         "avatarUrl": "https://s3-alpha-sig.figma.com/img/f5c2/1084/88205e72fcb26147eea3b2d53beaf332?Expires=1637539200&Signature=F3jHcEL2TIxamjRlj-BGE-FYpKzuvH9VP1Q7G7vz9-CfyzaR5O3xGhF~uo8th5FlKwu3ZSAN~9~CeNsy045NnzRuy6nq2yz-33OJavKh2GtMXG3P5F05GN~6saEmk060UjrPhWtx1Kwkh4zllzLn-hil9tH8c3k8CUGFRPs4NLC2CkeDnDoj3dKb0N4oQRB2LNReRL8BFbZek56LE4Rsnsa0Pqa4bIFs4oc6iAE-D8sGh66KQO5vTTdK5lnQy1UC8T5h-3wa~fCClOfXq97zrJlSdQEzsgMlKlOy6yKu~MNYKgq7KHlKkYgXExTJO1VM5wVrsCzUf1ZWR8lI8jdSJA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
         "verified": true
       },
-      "price": "5",
+      "price": "~5",
       "currency": "ETH"
     },
     {
@@ -40,7 +40,7 @@
         "avatarUrl": "https://s3-alpha-sig.figma.com/img/f42e/792c/d46a337e4eea7d6520febeacf2a62cb6?Expires=1637539200&Signature=ARpGRUHOWDhJeYSiSRC-eQ~pDUrhofIzh1zf8X3SXoi4fdFMoF~Z4SULdNJ3N~-f6gljUBIZSHVpD78j1VzYbMdrOECYkEJ5IYgkGTZ2~qEwVVEIACdKTxot-5p6LycJKn2T-dYShqAohDw94oV3iacx4THCQH5RHbbmq5plWVcNvvcl6MVllr8KmtrS4lvw9xN0OAcaRyptmmr-N2x5Rt7BBBPqUGn6nM2BI8NcFJHIBH4rxJMPuZdDADK1wTTjZwgAVEkF0eA9Fua4DPxnzfo-060P-XJRvr2fG-JjcctHIM81xeMKcBLo2OFgRb6ki6IzE7-DmzTM0ohZ9GTDUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
         "verified": true
       },
-      "price": "10",
+      "price": "~10",
       "currency": "ETH"
     }
   ],
@@ -54,7 +54,7 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-      "price": "10",
+      "price": "~10",
       "currency": "ETH",
       "timeLeft": 200
     },
@@ -66,7 +66,7 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-      "price": "10",
+      "price": "~10",
       "currency": "ETH",
       "timeLeft": 200
     },
@@ -78,7 +78,7 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-      "price": "10",
+      "price": "~10",
       "currency": "ETH",
       "timeLeft": 200
     },
@@ -90,7 +90,7 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-     " price": "10",
+     "price": "~10",
       "currency": "ETH",
       "timeLeft": 200
     }
