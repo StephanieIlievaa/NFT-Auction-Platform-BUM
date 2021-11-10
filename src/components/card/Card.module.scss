@@ -3,47 +3,37 @@
 .card {
   padding: 0rem 1rem;
   background-color: rgba(36, 242, 94, 0.1) !important;
-
 }
 
 .media {
   border-radius: 15px !important;
   width: 309px;
   height: 286px;
-  
-  
 }
 
 .content {
   display: flex;
   justify-content: space-between;
   padding: 15px !important;
-
-  &__info {
-    h4 {
-      margin: 0;
-      font-weight: bold;
-    }
-    p {
-      margin: 0;
-      color: #24f25e;
-      font-weight: bold;
-    }
-  }
 }
-
-.chip {
+.title {
+  margin: 0;
+  font-weight: bold;
+}
+.price {
+  color: #24f25e;
+  font-weight: bold;
+  margin: 0;
+}
+.likes {
   align-self: center;
 }
-
-
 
 .liveCard {
   display: flex;
   width: 10%;
   height: 10%;
   position: absolute;
-  
 }
 
 .grid {
@@ -70,8 +60,7 @@
   border-radius: 0px 0px 15px 15px;
   height: 27px;
   width: 309px;
-  top:260px !important;
-
+  top: 260px !important;
 
   position: absolute;
   top: 50px;
