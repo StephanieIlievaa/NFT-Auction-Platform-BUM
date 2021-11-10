@@ -1,4 +1,4 @@
-@import "../../styles/colors";
+@use "../../styles/colors";
 
 .wrapper {
     display: flex;
@@ -12,14 +12,16 @@ flex-direction: row;
 }
 
 .name { 
-    color: $text_primary;
+    color: colors.$text_primary;
     font-size: 16px;
     font-weight: 800;
+   
 }
 
 .info {
+    color: colors.$text_secondary;
     font-size: 0.875rem;
     font-weight: normal;
     font-weight: bold;
-    color: $success_main;
+    
 }

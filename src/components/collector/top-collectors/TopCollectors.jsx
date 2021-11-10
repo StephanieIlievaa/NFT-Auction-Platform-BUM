@@ -16,7 +16,7 @@ function TopCollectors({ collectors = [] }) {
             <div className={styles.title}>Top Collectors</div>
             <Select
               className={styles.select}
-              style={{ width: "250px" }}
+              style={{width:220, height:50, }}
               value={time}
               onChange={selectMenuHandler}
               displayEmpty

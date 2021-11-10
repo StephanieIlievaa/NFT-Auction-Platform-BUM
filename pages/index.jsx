@@ -40,7 +40,7 @@ function Home() {
     <Container maxWidth="lf">
       <Grid container justifyContent="center">
         <Grid item>
-          <Header></Header>
+          <Header/>
           <Featured items={featuredCards.cards} />
 
           <Trending cards={nfts.cards} />

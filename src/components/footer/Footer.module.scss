@@ -1,37 +1,26 @@
 @use "../../styles/colors";
 
 .wrapper {
-    padding: 20px;
+   width:1920px;
+   height: 98px;
+   background-color: colors.$background_paper;   
 }
 .footerContainer {
-    display: flex !important;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 350%;
-    bottom: 0%;
-    align-items: center-end;
-    justify-content: space-evenly;
-   
+    padding: 15px !important
 }
 .allRights{
-    position: absolute;
-left: 44.58%;
-right: 44.58%;
-top: 41.84%;
-bottom: 40.82%;
-
+width: 208px;
+height: 17px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 17px;
-color: colors.$text_secondary;
-}
-.policy{
+color:rgba(225, 225, 252, 0.5);
 position: absolute;
-left:80rem;
+left: 856px !important;
 
 }
+
 
 

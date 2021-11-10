@@ -2,6 +2,8 @@
 
 .wrapper {
   padding: 0rem 1rem;
+  background-color: rgba(36, 242, 94, 0.1) !important;
+
 }
 
 .card {
@@ -11,6 +13,10 @@
 
 .media {
   border-radius: 15px !important;
+  width: 309px;
+  height: 286px;
+  
+  
 }
 
 .content {
@@ -34,11 +40,15 @@
 .chip {
   align-self: center;
 }
+
+
+
 .liveCard {
   display: flex;
   width: 10%;
   height: 10%;
   position: absolute;
+  
 }
 
 .grid {

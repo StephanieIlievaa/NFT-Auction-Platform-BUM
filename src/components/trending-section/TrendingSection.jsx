@@ -17,13 +17,13 @@ function Trending({ cards = [] }) {
           <Grid item className={styles.titleWrapper}>
             <div className={styles.title}>Trending</div>
           </Grid>
-          <Grid item className={styles.selectWrapper}>
+          <Grid item >
             <Select
-              className={styles.select}
+            style={{width:220, height:50}}
               value={time}
               onChange={selectMenuHandler}
               displayEmpty
-              inputProps={{ "aria-label": "Without label" }}
+              
             >
               <MenuItem value="">This week</MenuItem>
               <MenuItem value={10}>Today</MenuItem>
