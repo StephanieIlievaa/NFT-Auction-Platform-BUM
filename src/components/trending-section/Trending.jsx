@@ -36,7 +36,7 @@ export default function Trending({ cards = [] }) {
         <Grid container spacing={2} item className={styles.cards} xl>
           {cards.map((card) => (
             <Grid item xs={3} md={3}>
-              <Card  {...card} key={card.key} />
+              <Card trending {...card} key={card.key} />
             </Grid>
           ))}
         </Grid>
