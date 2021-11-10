@@ -3,7 +3,7 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Container from "@mui/material/Container";
 import { useRouter } from "next/router";
-function Featured({ items = [] }) {
+export default function Featured({ items = [] }) {
   return (
     <div>
       <Container className={styles.container}>
@@ -32,5 +32,3 @@ function Featured({ items = [] }) {
     </div>
   );
 }
-
-export default Featured;

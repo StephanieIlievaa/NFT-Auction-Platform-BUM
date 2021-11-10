@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./Auctions.module.scss";
 import { height } from "@mui/material/node_modules/@mui/system";
 
-function Auctions({cards = []}) {
+export default function Auctions({cards = []}) {
     const [time, setTime] = useState("");
 
     const selectMenuHandler = (e) => {
@@ -44,4 +44,3 @@ function Auctions({cards = []}) {
       </div>
     );
 }
-export default Auctions;

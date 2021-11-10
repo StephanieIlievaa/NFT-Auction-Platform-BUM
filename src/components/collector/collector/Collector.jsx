@@ -6,7 +6,7 @@ import User from "../../user/User.jsx";
 //to use rgba func => ) for every second user => className={ligth}
 // others => rgba(21, 15, 52) == #150F34
 
-function Collector({ items = [], type = "" }) {
+export default function Collector({ items = [], type = "" }) {
   const Opacity = () => {
     if (type == "light") {
       return "rgba(28, 18, 73)";
@@ -33,4 +33,4 @@ function Collector({ items = [], type = "" }) {
     </div>
   );
 }
-export default Collector;
+
