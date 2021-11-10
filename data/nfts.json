@@ -1,6 +1,6 @@
 { "cards" : [
     {
-      "name": "Ivy",
+      "name": "Clock",
       "likes": 1100,
       "mediaUrl": "images/nft.jpg",
       "user": {
@@ -22,7 +22,7 @@
       "currency": "ETH"
     },
     {
-      "name": "Juniper",
+      "name": "Wandering Flame",
       "likes": 1000,
       "mediaUrl": "https://s3-alpha-sig.figma.com/img/09f9/5a9a/00eca57f58a1a97d522c8bfe5673a0a7?Expires=1637539200&Signature=d~ifbC4gXd8amrkh-3Op~cHYWBYDaAwla2qaq4o~CymP~h~AC1tV9U1vpgMlaMivAWTcd91PQ~kM5PHxDCVXgzOa5tIsog-xEoZ3akebbWynuZXz890QqdOth60PumRnZhltQRin~2Ne-hLmfCZ-d9hW6mQ5jo7v2qpSKMR2sF6~Spf~Mvy2Vts~Hie-g~VxAFmBLm~31w47XiArpIz2ccwq1MvotlUcJ~2qcnBD~kQpQ5k5FV3rPTpLQt4PomUNxDDoHK38EOAzFeMHO2QZk1Ki8z9QWFfmPLVFAWBOobJ0sM92rDMPuvYwTzRDbyRHd4OVujTGirS~ieO0m9MUpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
       "user": {
@@ -33,7 +33,7 @@
       "currency": "ETH"
     },
     {
-      "name": "Maple",
+      "name": "Glorious Curtain",
       "likes": 1000,
       "mediaUrl": "https://s3-alpha-sig.figma.com/img/8199/acf3/84420520fd2b71e1cc49ac230f2089da?Expires=1637539200&Signature=UfyCdQEi~isTLbpq1-ljey93cpujupcTK1qg8-dkUdrGujMbpJ5EBawFxKmlIDtDy-OZA3IrAGj0~qHWAhTjBYQO-LlCypi5p8bpfmzrYIhi4Vl8Q9s6a~uEf~oYdtnYfLKr4akbIIGxDoL2KR9bNKf5ceiMc4MbvcVSZgq1rQ7eeZC6piTXWW8C5IYF6mc1zovg7gXejky0k3wwv~7Q25WH7aaknU~34jt6IK~f5HJW7fVOduWjqKTayJDv4WajIvnqnxGTjpzvAG9a8dT7gcs4BANIPu7XTBiFiW99WsDZP4kWvGnF8DCwrAjn78LyMbJEKt7jJXC2NRfckHok4Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
       "user": {
