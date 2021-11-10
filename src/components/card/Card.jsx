@@ -31,11 +31,11 @@ function Card({
     }
   };
   return (
-    <CardWrap className={styles.wrapper} sx={{ maxWidth: 500 }}>
+    <CardWrap className={styles.wrapper} sx={{ maxWidth: 500, color: '' }}>
       <CardHeader
         avatar={<Avatar size={33} url={user.avatarUrl} verified={user.verified} />}
       ></CardHeader>
-      {timeLeft ? <LiveCard timeLeft={timeLeft} /> : null}
+      {timeLeft ? <LiveCard className={styles.liveColorWrapper} timeLeft={timeLeft} /> : null}
       <CardMedia
         className={styles.media}
         component="img"

@@ -2,6 +2,7 @@ import { Container, Grid, Select, MenuItem } from "@mui/material";
 import Card from '../card/Card.jsx'
 import { useState } from "react";
 import styles from "./Auctions.module.scss";
+import { height } from "@mui/material/node_modules/@mui/system";
 
 function Auctions({cards = []}) {
     const [time, setTime] = useState("");
@@ -19,11 +20,11 @@ function Auctions({cards = []}) {
             </Grid>
             <Grid item className={styles.selectWrapper}>
               <Select
+              
                 className={styles.select}
                 value={time}
                 onChange={selectMenuHandler}
                 displayEmpty
-                inputProps={{ "aria-label": "Without label" }}
               >
                 <MenuItem value="">This week</MenuItem>
                 <MenuItem value={10}>Today</MenuItem>
@@ -32,10 +33,10 @@ function Auctions({cards = []}) {
               </Select>
             </Grid>
           </Grid>
-          <Grid container spacing={2} item className={styles.cards} xl>
+          <Grid container spacing={2} item xl>
             {cards.map((card) => (
-              <Grid item xs={3} md={3}>
-                <Card key={card.key} {...card} />
+              <Grid className={styles.card}  item xs={3} md={3}>
+                <Card  key={card.key} {...card} />
               </Grid>
             ))}
           </Grid>

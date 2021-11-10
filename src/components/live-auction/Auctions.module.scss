@@ -1,13 +1,14 @@
+.wrapper {
+  padding-top: 89px;
+  padding-bottom: 96px;
+  align-items: center;
+}
 .gridContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 .title {
-    font-weight: bold;
-    font-size: 4rem;
-}
-.cards {
-    display: flex;
-    justify-content: space-between;
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 50px;
 }
