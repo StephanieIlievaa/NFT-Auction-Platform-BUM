@@ -1,6 +1,6 @@
 import Header from "../src/components/header/Header.jsx";
 import Featured from "../src/components/featured/Featured.jsx";
-import Trending from "../src/components/trending-section/TrendingSection.jsx"
+import Trending from "../src/components/trending-section/Trending.jsx"
 import TopCollectors from "../src/components/collector/top-collectors/TopCollectors.jsx";
 import How from "../src/components/how/How.jsx";
 import Auctions from "../src/components/live-auction/Auctions.jsx";

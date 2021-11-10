@@ -1,6 +1,6 @@
 import Card from '../card/Card.jsx'
 import { useState } from "react";
-import styles from "./TrendingSection.module.scss";
+import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
@@ -36,7 +36,7 @@ export default function Trending({ cards = [] }) {
         <Grid container spacing={2} item className={styles.cards} xl>
           {cards.map((card) => (
             <Grid item xs={3} md={3}>
-              <Card  {...card} key={card.key} />
+              <Card trending {...card} key={card.key} />
             </Grid>
           ))}
         </Grid>

@@ -13,6 +13,7 @@ import LiveIcon from "@mui/icons-material/FiberManualRecord";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Stack } from "@mui/material";
+
 export default function Card({
   name = "",
   likes = 0,
@@ -21,16 +22,19 @@ export default function Card({
   price = 0,
   currency = "",
   timeLeft = 0,
+  trending
 }) {
   const [color, setColor] = useState("outlined");
 
   const likesHandleBtn = () => {
-    {
-      color == "filled" ? setColor("outlined") : setColor("filled");
-    }
+    color == "filled" ? setColor("outlined") : setColor("filled");
   };
+
   return (
-    <CardWrap className={styles.card} sx={{ maxWidth: 500, color: "" }}>
+    <CardWrap
+      className={styles.card}
+      sx={{ maxWidth: 500, backgroundColor: `${trending ? "#181828" : "#0E231B"}` }}
+    >
       <CardHeader
         avatar={
           <Avatar size={33} url={user.avatarUrl} verified={user.verified} />
@@ -48,11 +52,11 @@ export default function Card({
         <Box className={styles.content__info}>
           <div className={styles.title}>{name}</div>
           <div className={styles.price}>
-            ~{price} {currency}
+            {trending ? `~${price} ${currency}` : `${price} ${currency}`}
           </div>
         </Box>
         <Stack>
-            <Chip
+          <Chip
             className={styles.likes}
             label={millify(likes)}
             icon={<Favorite />}
