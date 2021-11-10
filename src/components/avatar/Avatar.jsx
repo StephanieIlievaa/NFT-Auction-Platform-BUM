@@ -5,7 +5,7 @@ function Avatar({ size = 90, url, verified = false }) {
   return (
     <div className={styles.wrapper}>
       <Container
-        className={styles.container}
+        className={styles.avatar}
         sx={{ width: size, height: size }}
       >
         <img
