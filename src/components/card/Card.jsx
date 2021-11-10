@@ -48,7 +48,7 @@ export default function Card({
         <Box className={styles.content__info}>
           <h4 className={styles.title}>{name}</h4>
           <p className={styles.price}>
-            {price} {currency}
+            {price +  ' ' + currency}
           </p>
         </Box>
         <Stack>
