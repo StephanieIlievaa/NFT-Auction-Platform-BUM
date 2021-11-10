@@ -2,11 +2,11 @@ import styles from "./User.module.scss";
 import Avatar from "../avatar/Avatar.jsx";
 import Box from "@mui/material/Box";
 
-function User({
+export default function User({
+  size = 55,
   name = "",
   info = "",
   avatar = "",
-  size = 55,
   verified = false,
 }) {
   return (
@@ -19,4 +19,4 @@ function User({
     </div>
   );
 }
-export default User;
+

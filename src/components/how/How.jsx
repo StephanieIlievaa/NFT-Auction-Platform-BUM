@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import Step from "../step/Step.jsx";
 
-function How({description='', title='', items=[], link=''}) {
+export default function How({description='', title='', items=[], link=''}) {
   return (
     <div className={styles.wrapper}>
       <Grid maxWidth="lg" className={styles.container}>
@@ -36,4 +36,4 @@ function EachStep({ item = [] }) {
     </Grid>
   );
 }
-export default How;
+

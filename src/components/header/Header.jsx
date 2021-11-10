@@ -6,7 +6,7 @@ import styles from "./Header.module.scss";
 import SearchBar from "../SearchBar/SearchBar";
 import Button from "@mui/material/Button";
 
-function Header() {
+export default function Header() {
   return (
     <div className={styles.wrapper} >
       <Container className={styles.container} >
@@ -44,4 +44,4 @@ function Header() {
   );
 }
 
-export default Header;
+

@@ -4,7 +4,7 @@ import Button from "@mui/material/Button";
 import styles from "./Footer.module.scss";
 import { Container } from "@mui/material";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className={styles.wrapper}>
       <Container className={styles.footerContainer} maxWidth="xl">
@@ -28,4 +28,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+

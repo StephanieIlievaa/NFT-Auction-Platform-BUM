@@ -12,7 +12,7 @@ import Countdown from "react-countdown";
 import LiveIcon from "@mui/icons-material/FiberManualRecord";
 import Grid from "@mui/material/Grid";
 
-function Card({
+export default function Card({
   name,
   likes,
   mediaUrl,
@@ -79,4 +79,4 @@ function LiveCard({ timeLeft = 0 }) {
     </div>
   );
 }
-export default Card;
+

@@ -3,7 +3,8 @@ import { useState } from "react";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 import CollectorsColumn from "../collectorsColumn/CollectorsColumn.jsx";
 import _ from "lodash";
-function TopCollectors({ collectors = [] }) {
+
+export default function TopCollectors({ collectors = [] }) {
   const [time, setTime] = useState("");
   const selectMenuHandler = (e) => {
     setTime(e.target.value);
@@ -38,4 +39,4 @@ function TopCollectors({ collectors = [] }) {
     </div>
   );
 }
-export default TopCollectors;
+
