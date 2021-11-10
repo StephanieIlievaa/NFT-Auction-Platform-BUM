@@ -46,10 +46,10 @@ export default function Card({
       ></CardMedia>
       <CardContent className={styles.content}>
         <Box className={styles.content__info}>
-          <h4 className={styles.title}>{name}</h4>
-          <p className={styles.price}>
+          <div className={styles.title}>{name}</div>
+          <div className={styles.price}>
             {price +  ' ' + currency}
-          </p>
+          </div>
         </Box>
         <Stack>
             <Chip
