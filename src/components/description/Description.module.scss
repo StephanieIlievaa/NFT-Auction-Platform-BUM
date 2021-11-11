@@ -1,0 +1,30 @@
+@use "../../styles/colors";
+.description {
+    width: 1920px;
+    height: 840px;
+}
+.textWrapper{
+     position: absolute;
+    width: 960px;
+    height: 839px;
+    top: 308px;
+    left: 470px;
+    background-color:colors.$background_paper ;
+}
+.text {
+    position: absolute;
+    font-size: 16px;
+    width: 818px;
+    height: 387px;
+    left: 80px;
+    top: 80px;
+}
+.image {
+    position: absolute;
+   width: 818px;
+   height: 241px;
+   left: 80px ;
+   top: 480px;
+   background-color: rgba(0, 0, 0, 0.22); 
+   border-radius: 15px;
+}

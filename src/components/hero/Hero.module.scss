@@ -1,0 +1,17 @@
+@use "../../styles/colors";
+
+.hero {
+  width: 1920px;
+  height: 420px;
+  background-color: colors.$primary_main;
+}
+.text {
+  width: 517px;
+  height: 73px;
+  position: absolute;
+  left: 702px;
+  top: 186px;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}

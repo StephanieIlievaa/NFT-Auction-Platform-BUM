@@ -16,7 +16,8 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;
 line-height: 17px;
-color:rgba(225, 225, 252, 0.5);
+color: colors.$text_hint;
+opacity: 50%;
 position: absolute;
 left: 856px !important;
 
