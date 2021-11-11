@@ -4,6 +4,7 @@ import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [] }) {
+  
   const [time, setTime] = useState("");
 
   const selectMenuHandler = (e) => {
