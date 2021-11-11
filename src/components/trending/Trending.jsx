@@ -1,4 +1,4 @@
-import Card from '../card/Card.jsx'
+import Card from "../card/Card.jsx";
 import { useState } from "react";
 import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
@@ -11,20 +11,18 @@ export default function Trending({ cards = [] }) {
   };
 
   return (
-    
-    <div className={styles.wrapper} >
+    <div className={styles.wrapper}>
       <Container className={styles.container} maxWidth="xl">
         <Grid container className={styles.gridContainer}>
           <Grid item className={styles.titleWrapper}>
             <div className={styles.title}>Trending</div>
           </Grid>
-          <Grid item >
+          <Grid item>
             <Select
-            style={{width:220, height:50}}
+              style={{ width: 220, height: 50 }}
               value={time}
               onChange={selectMenuHandler}
               displayEmpty
-              
             >
               <MenuItem value="">This week</MenuItem>
               <MenuItem value={10}>Today</MenuItem>
