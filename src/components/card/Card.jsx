@@ -74,7 +74,7 @@ function LiveCard({ timeLeft = 0 }) {
   return (
       <Grid className={styles.liveCardWrapper}>
         <Grid className={styles.badge}>
-          <LiveIcon color="primary"  sx={{width: 15, height: 15, color: '#181828'}} />
+          <LiveIcon sx={{width: 15, height: 15, color: '#181828'}} />
           <div className={styles.live}>LIVE</div>
         </Grid>
         <Grid className={styles.counterWrapper}>
