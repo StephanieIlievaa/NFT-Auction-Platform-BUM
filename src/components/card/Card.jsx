@@ -72,11 +72,10 @@ export default function Card({
 
 function LiveCard({ timeLeft = 0 }) {
   return (
-    <div className={styles.liveCard}>
-      <Grid className={styles.grid}>
+      <Grid className={styles.liveCardWrapper}>
         <Grid className={styles.badge}>
-          <LiveIcon color="primary" />
-          <div className={styles.live}>Live</div>
+          <LiveIcon color="primary"  sx={{width: 15, height: 15, color: '#181828'}} />
+          <div className={styles.live}>LIVE</div>
         </Grid>
         <Grid className={styles.counterWrapper}>
           <Countdown
@@ -85,6 +84,6 @@ function LiveCard({ timeLeft = 0 }) {
           />
         </Grid>
       </Grid>
-    </div>
+   
   );
 }
