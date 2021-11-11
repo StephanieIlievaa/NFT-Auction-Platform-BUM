@@ -9,7 +9,7 @@ import millify from "millify";
 import { useState } from "react";
 import Favorite from "@mui/icons-material/Favorite";
 import Countdown from "react-countdown";
-import LiveIcon from "@mui/icons-material/FiberManualRecord";
+import FiberManualRecord from "@mui/icons-material/FiberManualRecord";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { Stack } from "@mui/material";
@@ -22,7 +22,7 @@ export default function Card({
   price = 0,
   currency = "",
   timeLeft = 0,
-  trending
+  trending,
 }) {
   const [color, setColor] = useState("outlined");
 
@@ -33,7 +33,10 @@ export default function Card({
   return (
     <CardWrap
       className={styles.card}
-      sx={{ maxWidth: 500, backgroundColor: `${trending ? "#181828" : "#0E231B"}` }}
+      sx={{
+        maxWidth: 500,
+        backgroundColor: `${trending ? "#181828" : "#0E231B"}`,
+      }}
     >
       <CardHeader
         avatar={
@@ -72,18 +75,17 @@ export default function Card({
 
 function LiveCard({ timeLeft = 0 }) {
   return (
-      <Grid className={styles.liveCardWrapper}>
-        <Grid className={styles.badge}>
-          <LiveIcon sx={{width: 15, height: 15, color: '#181828'}} />
-          <div className={styles.live}>LIVE</div>
-        </Grid>
-        <Grid className={styles.counterWrapper}>
-          <Countdown
-            className={styles.counter}
-            date={Date.now() + timeLeft * 10000}
-          />
-        </Grid>
+    <Grid className={styles.liveCardWrapper}>
+      <Grid className={styles.badge}>
+        <FiberManualRecord sx={{ width: 15, height: 15, color: "#181828" }} />
+        <div className={styles.live}>LIVE</div>
       </Grid>
-   
+      <Grid className={styles.counterWrapper}>
+        <Countdown
+          className={styles.counter}
+          date={Date.now() + timeLeft * 10000}
+        />
+      </Grid>
+    </Grid>
   );
 }
