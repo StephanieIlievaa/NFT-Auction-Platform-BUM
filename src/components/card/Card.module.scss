@@ -6,7 +6,7 @@
 
 .media {
   border-radius: 15px !important;
-  width: 309px;
+  width: 309px !important;
   height: 286px;
 }
 
@@ -28,43 +28,41 @@
   align-self: center;
 }
 
-.liveCard {
+.liveCardWrapper {
   display: flex;
   width: 10%;
   height: 10%;
   position: absolute;
 }
 
-.grid {
-  width: fit-content !important;
-}
-
 .badge {
-   border-radius: 12px;
+  border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: max-content;
   background-color: colors.$success_main;
-  width: 100px !important;
   margin-top: 10px !important;
   margin-left: 10px !important;
+   width: 75px;
+  height: 30px;
 }
 .live {
-  color: black !important;
+  color: black;
+  font-size: 14px;
   font-weight: bold;
-  font-size: x-large;
-  border-radius: 1px !important;
+  width: 33px;
+  height: 17px;
 }
 .counterWrapper {
   background-color: colors.$success_main;
   border-radius: 0px 0px 15px 15px;
-  height: 27px;
+  height: 42px;
   width: 309px;
-  top: 260px !important;
+  top: 244px !important;
 
   position: absolute;
-  top: 50px;
+  top: 30px;
   text-align: center;
   align-items: center;
 }
