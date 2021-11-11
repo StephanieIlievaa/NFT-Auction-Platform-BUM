@@ -39,20 +39,21 @@
   width: fit-content !important;
 }
 .badge {
+   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: max-content;
-  border-radius: 7px;
   background-color: colors.$success_main;
   width: 100px !important;
   margin-top: 10px !important;
   margin-left: 10px !important;
 }
 .live {
-  color: black;
+  color: black !important;
   font-weight: bold;
   font-size: x-large;
+  border-radius: 1px !important;
 }
 .counterWrapper {
   background-color: colors.$success_main;
