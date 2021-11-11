@@ -38,8 +38,9 @@
 .grid {
   width: fit-content !important;
 }
+
 .badge {
-   border-radius: 10px;
+   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +74,6 @@
   line-height: 22px;
   font-weight: bold;
   color: #181828;
-
   width: 100%;
   display: grid;
   height: 100%;
