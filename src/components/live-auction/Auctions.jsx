@@ -2,7 +2,7 @@ import { Container, Grid, Select, MenuItem } from "@mui/material";
 import Card from '../card/Card.jsx'
 import { useState } from "react";
 import styles from "./Auctions.module.scss";
-import { height } from "@mui/material/node_modules/@mui/system";
+
 
 export default function Auctions({cards = []}) {
     const [time, setTime] = useState("");
