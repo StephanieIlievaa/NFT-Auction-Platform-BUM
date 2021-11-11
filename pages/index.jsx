@@ -3,7 +3,7 @@ import Featured from "../src/components/featured/Featured.jsx";
 import Trending from "../src/components/trending/Trending.jsx"
 import TopCollectors from "../src/components/collector/top-collectors/TopCollectors.jsx";
 import How from "../src/components/how/How.jsx";
-import Auctions from "../src/components/live-auction/Auctions.jsx";
+import Auctions from "../src/components/auctions/Auctions.jsx";
 import Footer from '../src/components/footer/Footer.jsx'
 import { useState, useEffect } from "react";
 import dataFeatured from "../data/featured.json";
@@ -37,7 +37,7 @@ function Home() {
   });
 
   return (
-    <Container maxWidth="lf">
+    <Container maxWidth="lg">
       <Grid container justifyContent="center">
         <Grid item>
           <Header/>
