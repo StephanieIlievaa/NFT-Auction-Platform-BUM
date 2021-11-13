@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <div className={styles.wrapper}>
       <Container className={styles.footerContainer} maxWidth="xl">
-        <Grid container direction="row" columnSpacing={10}>
+        <Grid container  direction="row" >
           <Grid item >
-            <Logo type="muted" />
+            <Logo type="muted" sx={{ zIndex: 'modal' }} />
           </Grid>
           <Grid
             className={styles.allRights}
@@ -18,7 +18,7 @@ export default function Footer() {
           >
             <p>Bum All Rights Reserved 2021</p>
           </Grid>
-          <Grid item xs sx={{ direction : 'rtl' }} >
+          <Grid item xs sx={{ direction : 'row', display: 'flex-end' }} >
             <Button sx={{ color: "#e1e1fc" }}>Privacy Policy</Button>
             <Button sx={{ color: "#e1e1fc" }}>Cookie Policy</Button>
           </Grid>
