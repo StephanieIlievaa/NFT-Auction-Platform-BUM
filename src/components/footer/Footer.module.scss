@@ -4,12 +4,8 @@
    width:1920px;
    height: 98px;
    background-color: colors.$background_paper;   
-   margin-top: auto !important;
 }
-.logo {
-   position: absolute;
-   padding-top: 25px;
-}
+
 .allRights{
 width: 208px;
 height: 17px;
@@ -20,9 +16,6 @@ font-size: 14px;
 line-height: 17px;
 color: colors.$text_hint;
 opacity: 50%;
-position: absolute;
-left: 740px !important;
-padding-top: 25px;
 }
 
 
