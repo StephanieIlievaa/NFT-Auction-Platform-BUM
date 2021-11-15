@@ -1,7 +1,7 @@
 import styles from "./How.module.scss";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import Step from "../step/Step.jsx";
+import Step from "./Step.jsx";
 
 export default function How({
   description = "",
