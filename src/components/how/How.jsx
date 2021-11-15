@@ -5,9 +5,9 @@ import Step from "../step/Step.jsx";
 
 export default function How({description='', title='', items=[], link=''}) {
   return (
-    <div className={styles.wrapper}>
-      <Grid maxWidth="lg" className={styles.container}>
-        <Grid>
+    <div className={styles.wrapper} maxWidth="xl">
+      <Grid  className={styles.container}>
+        <Grid item>
           <h1 className={styles.titleHow}>{title} </h1>
           <p className={styles.paragraph}>{description} </p>
           <Button
@@ -17,7 +17,8 @@ export default function How({description='', title='', items=[], link=''}) {
             LEARN MORE
           </Button>
         </Grid>
-        <Grid item className={styles.items}>
+        <Grid container className={styles.items}>
+          
         { items.map( (item , index ) => <EachStep key={index} item={item} />)}
         </Grid>
       </Grid>
