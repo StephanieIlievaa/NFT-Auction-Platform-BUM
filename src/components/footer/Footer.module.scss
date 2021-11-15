@@ -6,7 +6,10 @@
    background-color: colors.$background_paper;   
    margin-top: auto !important;
 }
-
+.logo {
+   position: absolute;
+   padding-top: 25px;
+}
 .allRights{
 width: 208px;
 height: 17px;
@@ -18,8 +21,8 @@ line-height: 17px;
 color: colors.$text_hint;
 opacity: 50%;
 position: absolute;
-left: 856px !important;
-
+left: 740px !important;
+padding-top: 25px;
 }
 
 
