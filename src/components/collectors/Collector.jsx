@@ -1,6 +1,6 @@
 import { Grid } from "@mui/material";
 import styles from "./Collector.module.scss";
-import User from "../user/User.jsx"
+import User from "../user/User.jsx";
 
 //every second collector in a column should have a ligther backgroun-color
 //to use rgba func => ) for every second user => className={ligth}
@@ -33,4 +33,3 @@ export default function Collector({ items = [], type = "" }) {
     </div>
   );
 }
-

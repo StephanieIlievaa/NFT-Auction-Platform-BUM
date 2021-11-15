@@ -17,7 +17,7 @@ export default function TopCollectors({ collectors = [] }) {
             <div className={styles.title}>Top Collectors</div>
             <Select
               className={styles.select}
-              style={{width:220, height:50, }}
+              style={{ width: 220, height: 50 }}
               value={time}
               onChange={selectMenuHandler}
               displayEmpty
@@ -39,4 +39,3 @@ export default function TopCollectors({ collectors = [] }) {
     </div>
   );
 }
-
