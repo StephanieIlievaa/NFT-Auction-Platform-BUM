@@ -1,4 +1,4 @@
-import styles from "./Features.module.scss";
+import styles from "./Featured.module.scss";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Container from "@mui/material/Container";
