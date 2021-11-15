@@ -40,40 +40,35 @@
   background-color: colors.$text_primary !important;
   color: colors.$primary_main !important;
 }
-
-.items {
-
-  background-color: colors.$background_paper;
-  border-radius: 30px;  
+.items { 
+  box-sizing: border-box;
+  
 }
+.item {
+  height: 215px;
+  width: 580px;
+  border-radius: 30px;
+  background-color: colors.$background_paper;
+  
+ 
+}
+
 .item:nth-child(1) {
-    height: 215px;
-width: 580px;
-left: 1090px;
-top: 1681px;
-position: absolute;
- border-radius: 30px;
- background-color: colors.$background_paper;
+  position:relative;
+  left: 1090px;
+  bottom: 286px;
+  
 }
 .item:nth-child(2) {
-    height: 215px;
-    width: 580px;
-    left: 1090px;
-    top: 1923px;
-    position: absolute;
-     border-radius: 30px;
-     background-color: colors.$background_paper;
+  position:relative;
+  left: 1090px;
+  bottom: 256px;
 }
 .item:nth-child(3) {
-    height: 215px;
-    width: 580px;
-    left: 1090px;
-    top: 2164px;
-    position: absolute;
-     border-radius: 30px;
-     background-color: colors.$background_paper;
+  position:relative;
+  left: 1090px;
+  bottom: 226px;
+  
+
+
 }
-
-
-
-
