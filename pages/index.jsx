@@ -1,10 +1,10 @@
 import Header from "../src/components/header/Header.jsx";
 import Featured from "../src/components/featured/Featured.jsx";
-import Trending from "../src/components/trending/Trending.jsx"
-import TopCollectors from "../src/components/collector/TopCollectors.jsx";
+import Trending from "../src/components/trending/Trending.jsx";
+import TopCollectors from "../src/components/collectors/TopCollectors.jsx";
 import How from "../src/components/how/How.jsx";
 import Auctions from "../src/components/auctions/Auctions.jsx";
-import Footer from '../src/components/footer/Footer.jsx'
+import Footer from "../src/components/footer/Footer.jsx";
 import { useState, useEffect } from "react";
 import dataFeatured from "../data/featured.json";
 import dataHow from "../data/how.json";
@@ -13,9 +13,7 @@ import dataNfts from "../data/nfts.json";
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
-
 function Home() {
-
   const [featuredCards, setFeaturedCards] = useState([]);
   useEffect(() => {
     setFeaturedCards(dataFeatured);
@@ -40,7 +38,7 @@ function Home() {
     <Container maxWidth="lg">
       <Grid container justifyContent="center">
         <Grid item>
-          <Header/>
+          <Header />
           <Featured items={featuredCards.cards} />
 
           <Trending cards={nfts.cards} />
