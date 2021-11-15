@@ -12,7 +12,7 @@ export default function Trending({ cards = [] }) {
   };
 
   return (
-    <div className={styles.wrapper-wrapper}>
+    <div className={styles.wrapper}>
       <Container className={styles.container} maxWidth="xl">
         <Grid container className={styles.gridContainer}>
           <Grid item className={styles.titleWrapper}>
