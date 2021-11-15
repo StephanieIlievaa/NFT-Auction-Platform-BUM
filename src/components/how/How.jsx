@@ -17,7 +17,7 @@ export default function How({description='', title='', items=[], link=''}) {
             LEARN MORE
           </Button>
         </Grid>
-        <Grid container className={styles.items}>
+        <Grid container direction="column" className={styles.items}>
           
         { items.map( (item , index ) => <EachStep key={index} item={item} />)}
         </Grid>
@@ -28,7 +28,7 @@ export default function How({description='', title='', items=[], link=''}) {
 
 function EachStep({ item = [] }) {
   return (
-    <Grid item className={styles.item}>
+    <Grid item  spacing={2} className={styles.item}>
       <Step
         number={item.number}
         title={item.title}

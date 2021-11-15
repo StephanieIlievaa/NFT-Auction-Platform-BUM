@@ -40,28 +40,35 @@
   background-color: colors.$text_primary !important;
   color: colors.$primary_main !important;
 }
-
+.items { 
+  box-sizing: border-box;
+  
+}
 .item {
-  box-sizing:border-box;
   height: 215px;
   width: 580px;
   border-radius: 30px;
   background-color: colors.$background_paper;
-  padding-bottom: 30px;
+  
+ 
 }
 
 .item:nth-child(1) {
-  position:absolute;
+  position:relative;
   left: 1090px;
-  top: 1681px;
+  bottom: 286px;
+  
 }
 .item:nth-child(2) {
-  position: absolute;
+  position:relative;
   left: 1090px;
-  top: 1923px;
+  bottom: 256px;
 }
 .item:nth-child(3) {
-  position:absolute;
+  position:relative;
   left: 1090px;
-  top: 2164px;
+  bottom: 226px;
+  
+
+
 }
