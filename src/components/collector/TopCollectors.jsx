@@ -1,7 +1,7 @@
 import styles from "./TopCollectors.module.scss";
 import { useState } from "react";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
-import CollectorsColumn from "../collectorsColumn/CollectorsColumn.jsx";
+import CollectorColumn from "./CollectorColumn.jsx";
 import _ from "lodash";
 
 export default function TopCollectors({ collectors = [] }) {
@@ -31,7 +31,7 @@ export default function TopCollectors({ collectors = [] }) {
           </Grid>
           <Grid item className={styles.collectors} xl>
             {_.chunk(collectors, 3).map((collector, index) => (
-              <CollectorsColumn key={index} items={collector} />
+              <CollectorColumn key={index} items={collector} />
             ))}
           </Grid>
         </Grid>

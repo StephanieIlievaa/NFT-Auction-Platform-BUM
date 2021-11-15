@@ -1,5 +1,5 @@
-import Collector from "../collector/Collector.jsx";
-import styles from "./CollectorsColumn.module.scss";
+import Collector from "./Collector.jsx";
+import styles from "./CollectorColumn.module.scss";
 //implement map on the array
 
  export default function CollectorsColumn({ items = [] }) {
