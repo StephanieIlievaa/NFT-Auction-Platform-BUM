@@ -1,19 +1,19 @@
 .container {
-    max-width: 1512px !important;
-    position: relative;
-    top: 140px;
-}
-.imageList {
-    gap: 15px !important; 
-    height: 500px !important;
-    width:522px !important;
-}
-.image {
-      border-radius: 15px !important;
-      
+  max-width: 1494px !important;
+  position: relative;
+  padding-top: 176px;
 }
 
-.imageList:first-child {
-     margin-left: 0px;
-     border-radius: 15px 15px 15px 15px !important;
+.imageList {
+  gap: 18px !important;
+}
+
+.image {
+  border-radius: 15px !important;
+  height: 226px !important;
+}
+
+.imageListItem:nth-child(1) {
+  height: 482px !important;
+  width: 699px;
 }
