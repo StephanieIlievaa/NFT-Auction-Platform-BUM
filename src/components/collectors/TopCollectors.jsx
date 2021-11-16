@@ -7,8 +7,11 @@ import _ from "lodash";
 export default function TopCollectors({ collectors = [] }) {
   const [time, setTime] = useState("");
   const selectMenuHandler = (e) => {
-    setTime(e.target.value);
-  };
+    setTime(e.target.value); 
+  }; 
+  
+  let sortedCollectors = collectors.sort((a,b) => b.nftsCount - a.nftsCount);
+  
   return (
     <div maxWidth="xl" className={styles.wrapper}>
       <Container container direction="row" className={styles.gridContainer}>
@@ -30,7 +33,7 @@ export default function TopCollectors({ collectors = [] }) {
             </Select>
           </Grid>
           <Grid item className={styles.collectors} xl>
-            {_.chunk(collectors, 3).map((collector, index) => (
+            {_.chunk(sortedCollectors, 3).map((collector, index) => (
               <CollectorColumn key={index} items={collector} />
             ))}
           </Grid>
