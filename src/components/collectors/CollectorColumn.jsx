@@ -2,7 +2,7 @@ import Collector from "./Collector.jsx";
 import styles from "./CollectorColumn.module.scss";
 //implement map on the array
 
-export default function CollectorsColumn({ items = [] }) {
+export default function CollectorColumn({ items = [] }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
