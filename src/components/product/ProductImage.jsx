@@ -3,10 +3,12 @@ import Paper from "@mui/material/Paper";
 
 export default function ProductImage({url=[]}) {
   return (
-    <div className={styles.product-image}>
-      <Paper>
+    <div className={styles.wrapper}>
+    <div className={`${styles['product-image']}`}>
+     
         <img className={styles.image} src={url} />
-      </Paper>
+     
+    </div>
     </div>
   );
 }

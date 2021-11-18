@@ -1,4 +1,5 @@
-{ "cards" : [
+{
+  "cards": [
     {
       "name": "Clock",
       "likes": 1100,
@@ -15,7 +16,7 @@
       "likes": 1100,
       "mediaUrl": "https://s3-alpha-sig.figma.com/img/6817/8d37/721b5492917d289fca2f06570c78e174?Expires=1637539200&Signature=BY8rboDOKuWv7nUL7szqe-ncWD4JSeSWAaxgvMZTsDqS6VG9BisyozwYqAgkgbKOwzYZnwWB7KB9kjsY~9pYnOxXauEM9-yK~-ogsRypewrRTcGDdZXVb~YNDm5V7uUPo6nFBXPK2MvERvfarmKeKfNbNxKja7MH7E1jLaGzO6I5j~C3KIm21YxFU94EXY1EEYcGcE56ScNzL6KICZn4KTuc6NcZczGX0nlK1jneoRzwwoVLo5Jvy~WfKyk9Cfy7nW8v7Y46~so119~iF8ZYU1TWJLinJeTOuDJrgKXsAlAcu-iDQ5oTTOVNcT2XaA-eSseOy3qEwcvmtVzkjYtCqw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
       "user": {
-       "avatarUrl": "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1637539200&Signature=MzdTSHremRJCuhGEOxsillg0QsqbueCn0stAbxPFUEJdCoOZL5IlBZSyPZeTdaQbz2Mxljn1zJ6nDXlD43RW3KzirzK1FFyYYqNzADEM2vXWoEh92JCt9AYmEkFV4kLfUsEJ9tdDnwXwjLopcSOyNFtezXWeKn02Q4xadf~YnE1t2QqDjDbY3aFwhT2QbqTAgQuXHwlRDy2BxixZCeCPmjz2OVRnLOtS2unb9PRAV9RVBQNIIdr0StjYuV1bl9zf-H1znZsvQZBI7ZaeaADYW36EEVB~Dc50pXccpyf0CtQ2nknjbRQUetH~ab15ve8ke5yEQcRmPk89umx0yBu1xA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "avatarUrl": "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1637539200&Signature=MzdTSHremRJCuhGEOxsillg0QsqbueCn0stAbxPFUEJdCoOZL5IlBZSyPZeTdaQbz2Mxljn1zJ6nDXlD43RW3KzirzK1FFyYYqNzADEM2vXWoEh92JCt9AYmEkFV4kLfUsEJ9tdDnwXwjLopcSOyNFtezXWeKn02Q4xadf~YnE1t2QqDjDbY3aFwhT2QbqTAgQuXHwlRDy2BxixZCeCPmjz2OVRnLOtS2unb9PRAV9RVBQNIIdr0StjYuV1bl9zf-H1znZsvQZBI7ZaeaADYW36EEVB~Dc50pXccpyf0CtQ2nknjbRQUetH~ab15ve8ke5yEQcRmPk89umx0yBu1xA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
         "verified": false
       },
       "price": "10.3",
@@ -45,7 +46,7 @@
     }
   ],
 
-  "liveCards" : [
+  "liveCards": [
     {
       "name": "Suspect of Change",
       "likes": 1100,
@@ -90,9 +91,41 @@
         "avatarUrl": "images/avatar.png",
         "verified": true
       },
-     "price": "10",
+      "price": "10",
       "currency": "ETH",
       "timeLeft": 200
+    }
+  ],
+  "card": [
+    {
+      "name": "Unfortunate Insanity",
+      "owner": {
+        "name": "toadnft",
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH",
+      "likes": 1100,
+
+      "auction_end": "2022-09-02T20:43:19.149Z",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "bids": [
+        {
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "hrisi",
+            "verified": true
+          },
+          "amount": 30,
+          "date": "2021-10-22T08:29:23.382Z"
+        }
+      ],
+      "source": {
+        
+          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9.jpg"
+        
+      }
     }
   ]
 }
