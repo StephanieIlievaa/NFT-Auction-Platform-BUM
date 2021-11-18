@@ -1,5 +1,5 @@
 import styles from "./ProductInfoCreator.module.scss";
-import User from "../../user/User.jsx";
+import User from "../user/User.jsx";
 export default function ProductInfoCreator({
   name = "",
   avatar = "",

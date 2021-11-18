@@ -5,13 +5,14 @@ import CollectorColumn from "./CollectorColumn.jsx";
 import _ from "lodash";
 
 export default function TopCollectors({ collectors = [] }) {
+
   const [time, setTime] = useState("");
   const selectMenuHandler = (e) => {
     setTime(e.target.value); 
   }; 
   
-  let sortedCollectors = collectors.sort((a,b) => b.nftsCount - a.nftsCount);
-  
+ let sortedCollectors = collectors.sort((a,b) => b.nftsCount - a.nftsCount);
+ 
   return (
     <div maxWidth="xl" className={styles.wrapper}>
       <Container container direction="row" className={styles.gridContainer}>

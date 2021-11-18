@@ -13,7 +13,7 @@ import dataNfts from "../data/nfts.json";
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
-function Home() {
+export default function Home() {
   const [featuredCards, setFeaturedCards] = useState([]);
   useEffect(() => {
     setFeaturedCards(dataFeatured);
@@ -52,4 +52,4 @@ function Home() {
     </Container>
   );
 }
-export default Home;
+
