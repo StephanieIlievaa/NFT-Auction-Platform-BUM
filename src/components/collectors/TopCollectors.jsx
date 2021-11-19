@@ -11,7 +11,8 @@ export default function TopCollectors({ collectors = [] }) {
     setTime(e.target.value); 
   }; 
   
- let sortedCollectors = collectors.sort((a,b) => b.nftsCount - a.nftsCount);
+  let sortedCollectors = collectors.sort((a,b) => b.nftsCount - a.nftsCount).slice(0, 12);
+ 
  
   return (
     <div maxWidth="xl" className={styles.wrapper}>
@@ -34,9 +35,11 @@ export default function TopCollectors({ collectors = [] }) {
             </Select>
           </Grid>
           <Grid item className={styles.collectors} xl>
-            {_.chunk(sortedCollectors, 3).map((collector, index) => (
+
+          {_.chunk(sortedCollectors, 3).map((collector, index) => (
               <CollectorColumn key={index} items={collector} />
             ))}
+             
           </Grid>
         </Grid>
       </Container>

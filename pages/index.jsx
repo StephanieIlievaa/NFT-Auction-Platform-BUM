@@ -8,7 +8,7 @@ import Footer from "../src/components/footer/Footer.jsx";
 import { useState, useEffect } from "react";
 import dataFeatured from "../data/featured.json";
 import dataHow from "../data/how.json";
-import dataCollectors from "../data/collectors.json";
+import dataCollectors from "../data/users.json";
 import dataNfts from "../data/nfts.json";
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
@@ -42,7 +42,7 @@ export default function Home() {
           <Featured items={featuredCards.cards} />
 
           <Trending cards={nfts.cards} />
-          <TopCollectors collectors={topCollectors.collectors}></TopCollectors>
+          <TopCollectors collectors={topCollectors}></TopCollectors>
           <How {...HowSteps.how} />
           <Auctions cards={nfts.liveCards} />
 
