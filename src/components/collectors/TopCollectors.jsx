@@ -5,15 +5,23 @@ import CollectorColumn from "./CollectorColumn.jsx";
 import _ from "lodash";
 
 export default function TopCollectors({ collectors = [] }) {
-
   const [time, setTime] = useState("");
   const selectMenuHandler = (e) => {
-    setTime(e.target.value); 
-  }; 
-  
-  let sortedCollectors = collectors.sort((a,b) => b.id - a.id).slice(0, 12);
- 
- 
+    setTime(e.target.value);
+  };
+
+  let sortedCollectors = collectors
+    .sort((a, b) => b.nfts.length - a.nfts.length)
+    .slice(0, 12);
+
+  collectors.map((collector, index) => {
+    if (index < 12) {
+      collector.id = index + 1;
+    }
+  });
+
+  const chunked = _.chunk(sortedCollectors, 3);
+
   return (
     <div maxWidth="xl" className={styles.wrapper}>
       <Container container direction="row" className={styles.gridContainer}>
@@ -35,11 +43,14 @@ export default function TopCollectors({ collectors = [] }) {
             </Select>
           </Grid>
           <Grid item className={styles.collectors} xl>
-
-          {_.chunk(sortedCollectors, 3).map((collector, index) => (
-              <CollectorColumn key={index} items={collector} />
-            ))}
-             
+            {chunked.map((collectors, index) => {
+              return (
+                <CollectorColumn
+                  key={index}
+                  items={collectors}
+                ></CollectorColumn>
+              );
+            })}
           </Grid>
         </Grid>
       </Container>
