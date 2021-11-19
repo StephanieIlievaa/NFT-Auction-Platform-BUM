@@ -10,17 +10,19 @@ export default function TopCollectors({ collectors = [] }) {
     setTime(e.target.value);
   };
 
-  let sortedCollectors = collectors
-    .sort((a, b) => b.nfts.length - a.nfts.length)
-    .slice(0, 12);
+  let sortedCollectors = collectors.sort(
+    (a, b) => b.nfts.length - a.nfts.length
+  );
+
+  let topCollectors = sortedCollectors.slice(0, 12);
 
   collectors.map((collector, index) => {
     if (index < 12) {
-      collector.id = index + 1;
+      collector = index + 1;
     }
   });
 
-  const chunked = _.chunk(sortedCollectors, 3);
+  const chunked = _.chunk(topCollectors, 3);
 
   return (
     <div maxWidth="xl" className={styles.wrapper}>
