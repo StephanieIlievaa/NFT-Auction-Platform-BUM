@@ -23,9 +23,9 @@ export default function Collector({ items = [], type = "" }) {
           {" "}
           <User
             size={53}
-            name={items.name}
+            name={items.username}
             info={items.nftsCount}
-            avatar={items.avatar}
+            avatar={items.avatar.url}
             verified={items.verified}
           />
         </Grid>
