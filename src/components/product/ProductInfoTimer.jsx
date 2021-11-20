@@ -1,28 +1,30 @@
 import styles from "./ProductInfoTitle.module.scss";
-import Grid from '@mui/material/Grid';
+import { formatDistance } from "date-fns";
+import { parseISO } from "date-fns";
 import Countdown from "react-countdown";
 
 export default function ProductInfoTitle({timeEnd, onTimeEnd }) {
-    const [timeEnd, setTimeEnd] = useState("");
+  
+  
+  const timer =
+  <Countdown
+      date={timeEnd}
+      className={classNames(styles["active"])}
+      children={<div>{onTimeEnd}</div>}
+  />
 
-    const onTimeEnd = () => {
-      {
-        timeEnd < 0 ? setColor("hidden") : setTimeEnd("");
-      }
-    }
+const timerComponent =
 
-  return ( 
-    <div className={styles.product - info - title}>
-      <Grid className={styles.grid}>
-        </Grid>
-        <Grid  className={styles.counterWrapper}> 
-            <Countdown
-            onChange={onTimeEnd}
-              className={styles.counter}
-              date={Date.now() + timeEnd * 10000}
-            />
-        </Grid>
-      
-    </div>
-  );
+  <div className={classNames(styles["timer"])}>
+      <label className={classNames(styles["title"])}>Ends in</label>
+      {timer}
+  </div>
+
+return (
+  <div className={classNames(styles["product-info-timer"])}>
+      {timeEnd ? timerComponent : <div className={classNames(styles["timer"])}></div>}
+  </div>
+
+)
 }
+
