@@ -10,16 +10,16 @@ export default function TopCollectors({ collectors = [] }) {
     setTime(e.target.value);
   };
 
-  let sortedCollectors = collectors.sort(
-    (a, b) => b.nfts.length - a.nfts.length
-  );
+  let sortedCollectors = collectors
+    .sort((a, b) => b.nfts.length - a.nfts.length)
+    
+    let topCollectors= sortedCollectors.slice(0, 12)
+
   collectors.map((collector, index) => {
     if (index < 12) {
-        collector.id = index + 1;
-    };
-});
-
-const topCollectors = sortedCollectors.filter( collector => collector.id <= 12);
+      collector.id = index + 1;
+    }
+  });
 
   const chunked = _.chunk(topCollectors, 3);
 
