@@ -9,11 +9,10 @@ export default function TopCollectors({ collectors = [] }) {
   const selectMenuHandler = (e) => {
     setTime(e.target.value);
   };
+  // how to sort the collectors in descending order - by id, nftsCount or else ...
+  let sortedCollectors = collectors.sort((a, b) => b.nftsCount - a.nftsCount);
 
-  let sortedCollectors = collectors
-    .sort((a, b) => b.nfts.length - a.nfts.length)
-    
-    let topCollectors= sortedCollectors.slice(0, 12)
+  let topCollectors = sortedCollectors.slice(0, 12);
 
   collectors.map((collector, index) => {
     if (index < 12) {

@@ -1,0 +1,131 @@
+{
+  "cards": [
+    {
+      "name": "Clock",
+      "likes": 1100,
+      "mediaUrl": "images/nft.jpg",
+      "user": {
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "12.2",
+      "currency": "ETH"
+    },
+    {
+      "name": "Riddles",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/6817/8d37/721b5492917d289fca2f06570c78e174?Expires=1637539200&Signature=BY8rboDOKuWv7nUL7szqe-ncWD4JSeSWAaxgvMZTsDqS6VG9BisyozwYqAgkgbKOwzYZnwWB7KB9kjsY~9pYnOxXauEM9-yK~-ogsRypewrRTcGDdZXVb~YNDm5V7uUPo6nFBXPK2MvERvfarmKeKfNbNxKja7MH7E1jLaGzO6I5j~C3KIm21YxFU94EXY1EEYcGcE56ScNzL6KICZn4KTuc6NcZczGX0nlK1jneoRzwwoVLo5Jvy~WfKyk9Cfy7nW8v7Y46~so119~iF8ZYU1TWJLinJeTOuDJrgKXsAlAcu-iDQ5oTTOVNcT2XaA-eSseOy3qEwcvmtVzkjYtCqw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "https://s3-alpha-sig.figma.com/img/a68a/8b79/c88b82e620966052627e375539ee8786?Expires=1637539200&Signature=MzdTSHremRJCuhGEOxsillg0QsqbueCn0stAbxPFUEJdCoOZL5IlBZSyPZeTdaQbz2Mxljn1zJ6nDXlD43RW3KzirzK1FFyYYqNzADEM2vXWoEh92JCt9AYmEkFV4kLfUsEJ9tdDnwXwjLopcSOyNFtezXWeKn02Q4xadf~YnE1t2QqDjDbY3aFwhT2QbqTAgQuXHwlRDy2BxixZCeCPmjz2OVRnLOtS2unb9PRAV9RVBQNIIdr0StjYuV1bl9zf-H1znZsvQZBI7ZaeaADYW36EEVB~Dc50pXccpyf0CtQ2nknjbRQUetH~ab15ve8ke5yEQcRmPk89umx0yBu1xA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "verified": false
+      },
+      "price": "10.3",
+      "currency": "ETH"
+    },
+    {
+      "name": "Wandering Flame",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/09f9/5a9a/00eca57f58a1a97d522c8bfe5673a0a7?Expires=1637539200&Signature=d~ifbC4gXd8amrkh-3Op~cHYWBYDaAwla2qaq4o~CymP~h~AC1tV9U1vpgMlaMivAWTcd91PQ~kM5PHxDCVXgzOa5tIsog-xEoZ3akebbWynuZXz890QqdOth60PumRnZhltQRin~2Ne-hLmfCZ-d9hW6mQ5jo7v2qpSKMR2sF6~Spf~Mvy2Vts~Hie-g~VxAFmBLm~31w47XiArpIz2ccwq1MvotlUcJ~2qcnBD~kQpQ5k5FV3rPTpLQt4PomUNxDDoHK38EOAzFeMHO2QZk1Ki8z9QWFfmPLVFAWBOobJ0sM92rDMPuvYwTzRDbyRHd4OVujTGirS~ieO0m9MUpg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "https://s3-alpha-sig.figma.com/img/f5c2/1084/88205e72fcb26147eea3b2d53beaf332?Expires=1637539200&Signature=F3jHcEL2TIxamjRlj-BGE-FYpKzuvH9VP1Q7G7vz9-CfyzaR5O3xGhF~uo8th5FlKwu3ZSAN~9~CeNsy045NnzRuy6nq2yz-33OJavKh2GtMXG3P5F05GN~6saEmk060UjrPhWtx1Kwkh4zllzLn-hil9tH8c3k8CUGFRPs4NLC2CkeDnDoj3dKb0N4oQRB2LNReRL8BFbZek56LE4Rsnsa0Pqa4bIFs4oc6iAE-D8sGh66KQO5vTTdK5lnQy1UC8T5h-3wa~fCClOfXq97zrJlSdQEzsgMlKlOy6yKu~MNYKgq7KHlKkYgXExTJO1VM5wVrsCzUf1ZWR8lI8jdSJA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "verified": true
+      },
+      "price": "5.5",
+      "currency": "ETH"
+    },
+    {
+      "name": "Glorious Curtain",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/8199/acf3/84420520fd2b71e1cc49ac230f2089da?Expires=1637539200&Signature=UfyCdQEi~isTLbpq1-ljey93cpujupcTK1qg8-dkUdrGujMbpJ5EBawFxKmlIDtDy-OZA3IrAGj0~qHWAhTjBYQO-LlCypi5p8bpfmzrYIhi4Vl8Q9s6a~uEf~oYdtnYfLKr4akbIIGxDoL2KR9bNKf5ceiMc4MbvcVSZgq1rQ7eeZC6piTXWW8C5IYF6mc1zovg7gXejky0k3wwv~7Q25WH7aaknU~34jt6IK~f5HJW7fVOduWjqKTayJDv4WajIvnqnxGTjpzvAG9a8dT7gcs4BANIPu7XTBiFiW99WsDZP4kWvGnF8DCwrAjn78LyMbJEKt7jJXC2NRfckHok4Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "https://s3-alpha-sig.figma.com/img/f42e/792c/d46a337e4eea7d6520febeacf2a62cb6?Expires=1637539200&Signature=ARpGRUHOWDhJeYSiSRC-eQ~pDUrhofIzh1zf8X3SXoi4fdFMoF~Z4SULdNJ3N~-f6gljUBIZSHVpD78j1VzYbMdrOECYkEJ5IYgkGTZ2~qEwVVEIACdKTxot-5p6LycJKn2T-dYShqAohDw94oV3iacx4THCQH5RHbbmq5plWVcNvvcl6MVllr8KmtrS4lvw9xN0OAcaRyptmmr-N2x5Rt7BBBPqUGn6nM2BI8NcFJHIBH4rxJMPuZdDADK1wTTjZwgAVEkF0eA9Fua4DPxnzfo-060P-XJRvr2fG-JjcctHIM81xeMKcBLo2OFgRb6ki6IzE7-DmzTM0ohZ9GTDUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH"
+    }
+  ],
+
+  "liveCards": [
+    {
+      "name": "Suspect of Change",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/602e/d118/3c1f93d977521bbe280c198c767cc164?Expires=1637539200&Signature=PmgQVWOjnHYsamZhJ66So63uPz4sQALoJbs1GsgcrfHEjoq7hLgenaRfNAWUPrUdsS5DXnRSd9hhUqehH2d7Vn07LOjr-1ZJMjdqX1N1yOPinXdF-lBFtNz5SmOvWK3aSbu26RtCDAmKVh-Mw4Sy3~dVnxJ6FStQo7xkSSOohq5yG1Qs3pjNmeHcUfLMl~U1Uj-ilbmG3gsBcKvOSl2acJVU5KRFZYHHzfDR0ibZEyK2U301HxaFcR312tVxlw0mkWjK8agZUE-q07jYVT19dQze8hN8t7NfD1gB0fwx2PmtgxnsJ7bnKnVBLClQ89FpY~wWwV0i3zMxrNxK5SZHPg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "0.1",
+      "currency": "ETH",
+      "timeLeft": 200
+    },
+    {
+      "name": "Strugle of Generousity",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/ad49/3f7a/543a68d5946ca1634b942bd325677bf1?Expires=1637539200&Signature=UyBeWhcpZGz-k-QgXNKc9Tn08pKcxgbEDSAHxqZdkBTasjIITYpJVr0PrOQSMPJXrCkY0soMJxZuO95-a0uXbDF~nwqcd-~AeP~P84dDNrdT2rueTMdZsFidKFiuz1raJD8totPFRl8p2DWI2DZvDpull21VmMKLwpvI741OiaZLOjdVvWKUIdoCRojxhy4Ml10Bqi-nPzxam~gzzxamYgthpERe4JEFLhLPo60qmu44ogJgqDt7bsaOBRddmdswX7603e31edjmL7fTjCBCaGlC-3WG3zyY0ryvuU~FVNClpJdEG-yKBsQi~DnfNm6rmIOQzQtk9ySjQPN~ia~Bwg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH",
+      "timeLeft": 200
+    },
+    {
+      "name": "Humor of Psychology",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/d190/ad2f/b98573a84bf9f20bb0f87d1228c646d3?Expires=1637539200&Signature=a1IXLqbUzXOzy75IW9zdgvIG-Axtc-4UZEf8-eGuMm3POygv2HBp5V5c0QEobQCSJ25KExiKnl7xvh3fGXS48BnmyVaFuTUnlw6RXqxki107BMy-H7joIIgQ-3uk-xg6AXGfYVctsw53mNrEexgbTzH2hKfq0e3LqseGXVvoKBrzLZAKNXSvxD2bCdXGQuppK3hSodIjmE4wNNtI6EtmKvvyYLMtvr~vIXxZnPKSs~qkOeRT2EAoqpeJo-vbkhc7q4hXIqmabC-sXA~0pQ2FgOeD8R~ozU2IcFvetYVDYzz6PkYa6kO0TqBFsYhPpo8ccLYGUwYb5IYeAHdeSPZQoQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH",
+      "timeLeft": 200
+    },
+    {
+      "name": "Unfortunate Insanity",
+      "likes": 1100,
+      "mediaUrl": "https://s3-alpha-sig.figma.com/img/5700/961d/873ed585dda6af33c56c3e41f33c9c2b?Expires=1637539200&Signature=Drw0e4a2DuK5AD8r3gjLMSdfSnIkfaxKXqvZO908LZ6oL-SzEwOjRNpoC6xzgOmiJcECIpWIdrZBygVydLzx2JImqNFfVZexlhG600x1lCGT9LsSNaNZHu4lWIIy1zSrmCB-jD0TLfHX2RpRYQITU7R~dvJJ5ZkKkVpnRJy8IHg3o0GHiDjlYD3ycN-Jv4EIdlaIGVjSo0uPRLxHMSjtG3v~ob4WOpt2Gnt0MRA3WlRuW96RpziBc9xA6jMyR-Kbl0keLwCzyQD~5-Kuu~gJoTYOyOHw30nK-oKecBTbBQ617nvlx4pIV~Hhpwze37Nosj4Qq4UGcWza4YsNAn9brQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+      "user": {
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH",
+      "timeLeft": 200
+    }
+  ],
+  "card": [
+    {
+      "name": "Unfortunate Insanity",
+      "owner": {
+        "name": "toadnft",
+        "avatarUrl": "images/avatar.png",
+        "verified": true
+      },
+      "price": "10",
+      "currency": "ETH",
+      "likes": 1100,
+
+      "auction_end": "2022-09-02T20:43:19.149Z",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "bids": [
+        {
+          "user": {
+            "avatar": "/images/avatar.png",
+            "name": "hrisi",
+            "verified": true
+          },
+          "amount": 30,
+          "date": "2021-10-22T08:29:23.382Z"
+        }
+      ],
+      "source": {
+        
+          "url": "https://nft-auction.herokuapp.com/uploads/thumbnail_0x7d9debcf75a71bbb5c533804c9845d313fe3f6aa_ec98dd79b9.jpg"
+        
+      }
+    }
+  ]
+}
