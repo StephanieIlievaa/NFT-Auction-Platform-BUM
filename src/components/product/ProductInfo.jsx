@@ -24,6 +24,7 @@ export default function ProductInfo({
         <ProductInfoPrice amount={price} currency={currency}/>
         <ProductInfoStatus isLive={isLive}/>
         <ProductInfoLikes amount={likes}/>
+        
       </div>
     </div>
   );
