@@ -6,6 +6,6 @@ let liveStatus = <div className={`${styles["product-info-status"]}`}>
         <Chip className={styles.status} label="LIVE" color="success" /> 
     </div>
   return (
-   <div>{isLive ? liveStatus : <div></div>}</div>
+   <>{isLive ? liveStatus : <div></div>}</>
   );
 }
