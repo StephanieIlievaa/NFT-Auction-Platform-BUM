@@ -7,8 +7,8 @@ import ProductInfo from "./ProductInfo.jsx";
 export default function ProductContainer({
   name ="Shallow Son",
   owner ={
-    name: "Jerry",
-    avatar: "https://media.istockphoto.com/vectors/thinking-emoticon-question-face-emoji-with-eyeglasses-vector-vector-id1310060658?k=20&m=1310060658&s=612x612&w=0&h=xinMMHOLWfxXU-8zDafFNH4nOjlGaj9dytP9wlXTORM=",
+    name: "toadnft",
+    avatar: "https://s3-alpha-sig.figma.com/img/e8c9/9cd5/9b8596b5f1e73a55d94965e77c2e61cd?Expires=1638748800&Signature=XspoIh30aak1LnUYl~ONT8Q0a6DAIY-rc9rHD3YRwn03ZfMyoyLdJaKhIblbdfapTaiTnnqe7d79~ASFQ~oXpWt6oWwkeLtt36wVyQ-HSIlOxHtnF55NjgS4eR43hCt19ziKPXPtiTIMx~hjx4TrrF6Y1E5dDfeh7FL70-xUU9G9QouUNhXWyMvDBsJOfWVOGqr8nn1K-~nr5PZRGk1ywVAqwKzovJ3CWbq7-KPuKQ~jRRURcHTZx-68c1cYzki0lxyfNSNQtQuqgSt9JuXg2gulOs9CJglABaKQJCPNsLYZL00KzRILcvoKtTk7CVQkxdq92r6FY7GNPJZNehgGUw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
     verified: true,
 
   },
