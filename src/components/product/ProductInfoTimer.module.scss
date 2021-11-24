@@ -1,0 +1,38 @@
+@use "../../styles/colors";
+
+.product-info-timer {
+width: 218px;
+height: 118px;
+border-radius: 15px;
+background-color: colors.$secondary_main;
+position: relative;
+// left: 30px;
+// top: 150px;
+
+}
+.color-gray{
+    width: 218px;
+height: 118px;
+border-radius: 15px;
+background-color: #181828;
+position: relative;
+}
+.title {
+    background-color: colors.$background_default;
+    opacity: 10%;
+    width: 218px;
+    height: 37px;
+    color:black;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.timer {
+    color: black;
+    font-weight: bold;
+    font-size: 30.49px;
+    text-align: center;
+    position: relative;
+    // top: 15px;
+}

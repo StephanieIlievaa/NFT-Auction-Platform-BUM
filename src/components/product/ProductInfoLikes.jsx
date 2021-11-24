@@ -17,7 +17,7 @@ export default function ProductInfoLikes({ amount = 0  }) {
       <Chip
         className={styles.likes}
         label={millify(amount)}
-        icon={<Favorite />}
+        icon={<Favorite style={{fontSize: "13px"}}/>}
         onClick={likesHandleBtn}
         variant={color}
         color="success"

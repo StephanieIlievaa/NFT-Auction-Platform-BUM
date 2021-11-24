@@ -1,30 +1,45 @@
-import styles from "./ProductInfoTitle.module.scss";
+import styles from "./ProductInfoTimer.module.scss";
 import { formatDistance } from "date-fns";
 import { parseISO } from "date-fns";
 import Countdown from "react-countdown";
+import React, { useState, useEffect } from "react";
 
-export default function ProductInfoTitle({timeEnd, onTimeEnd }) {
-  
-  
-  const timer =
-  <Countdown
-      date={timeEnd}
-      className={classNames(styles["active"])}
-      children={<div>{onTimeEnd}</div>}
-  />
+export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
+  const timer = <Countdown date={timeEnd} />;
+  const [time, setTime] = useState(false);
 
-const timerComponent =
+  const setTimer = () => {
+    if (timeEnd !== "") {
+      setTime(true);
+    } else {
+      setTime(false);
+    }
+  };
 
-  <div className={classNames(styles["timer"])}>
-      <label className={classNames(styles["title"])}>Ends in</label>
-      {timer}
-  </div>
+  console.log(timeEnd);
+  console.log(onTimeEnd);
 
-return (
-  <div className={classNames(styles["product-info-timer"])}>
-      {timeEnd ? timerComponent : <div className={classNames(styles["timer"])}></div>}
-  </div>
+  useEffect(() => {
+    setTimer();
+  }, [timer]);
 
-)
+  return (
+    <div
+      onChange={onTimeEnd}
+      className={time ? styles["product-info-timer"] : styles["color-gray"]}
+    >
+      {time ? (
+        <>
+          <div className={styles.title}>
+            <h5>Ends in</h5>
+          </div>
+          <div className={styles.timer}>
+            <span>{timer}</span>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
+    </div>
+  );
 }
-
