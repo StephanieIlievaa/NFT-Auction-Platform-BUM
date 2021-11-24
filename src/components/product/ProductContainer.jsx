@@ -6,7 +6,12 @@ import ProductInfo from "./ProductInfo.jsx";
 
 export default function ProductContainer({
   name ="Shallow Son",
-  owner,
+  owner ={
+    name: "Jerry",
+    avatar: "https://media.istockphoto.com/vectors/thinking-emoticon-question-face-emoji-with-eyeglasses-vector-vector-id1310060658?k=20&m=1310060658&s=612x612&w=0&h=xinMMHOLWfxXU-8zDafFNH4nOjlGaj9dytP9wlXTORM=",
+    verified: true,
+
+  },
   price = 3,
   currency ='ETH',
   likes= 1300,
@@ -19,7 +24,7 @@ export default function ProductContainer({
     <div className={`${styles['product-container']}`}>
       <Grid container className={styles.container}>
         <Grid item xs={6}><ProductImage url={source}/></Grid>
-        <Grid item xs={5}><ProductInfo title={name} price={price} currency={currency} isLive={auction_end ? true :false} likes={likes}></ProductInfo></Grid>
+        <Grid item xs={5}><ProductInfo title={name} price={price} currency={currency} isLive={auction_end ? true :false} likes={likes} creator={owner}></ProductInfo></Grid>
       </Grid>
       <Grid></Grid>
     </div>

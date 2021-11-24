@@ -1,0 +1,23 @@
+@use "../../styles/colors";
+
+.product-info-creator {
+    background-color: colors.$background_paper;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    font-family: 'Monsterrat';
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.title {
+    background-color: colors.$primary_main;
+    padding-left: 20px;
+    font-family: 'Monsterrat';
+}
+
+.user-container {
+    background-color: colors.$background_paper;
+    font-family: 'Monsterrat';
+    display:flex;
+}

@@ -9,12 +9,13 @@ export default function User({
   avatar = "",
   verified = false,
 }) {
+  //Items
   return (
     <div className={styles.user}>
       <Avatar verified={verified} url={avatar} size={size}></Avatar>
       <Box className={styles.wrapper}>
         <div className={styles.name}>{name}</div>
-        <div className={styles.info}>{info} Items</div>
+        <div className={styles.info}>{info} </div>
       </Box>
     </div>
   );
