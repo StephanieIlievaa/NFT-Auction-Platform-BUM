@@ -1,14 +1,20 @@
-.product-info-status{
-    position: relative;   
-    left: 400px;
-    top: 95px
+@use "../../styles/colors";
+
+.product-info-status {
+  position: relative;
+  left: 400px;
+  top: 95px;
 }
 .status {
-    width: 75px;
-    height: 33px;
-    font-size: 14px;
-    font-weight: bold;
-    color: black;
- 
-    border-radius: 7px !important;
+  width: 75px;
+  height: 33px;
+  background-color: colors.$secondary_main !important;
+  border-radius: 7px !important;
+}
+.chip {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  width: 75px;
+  height: 33px;
 }
