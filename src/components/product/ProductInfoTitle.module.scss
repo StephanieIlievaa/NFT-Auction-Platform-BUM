@@ -1,12 +1,13 @@
-.wrapper {
-  .product-info-title {
-    position: relative;
-    top: 78px;
-    left: 38px;
-    
-  }
-  .title {
-    width: 398px;
-    height: 230px;
-  }
+.product-info-title {
+  width: 398px;
+  height: 73px;
+}
+.title {
+  position: relative;
+  top: 78px;
+  left: 38px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
 }
