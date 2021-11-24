@@ -1,11 +1,11 @@
 import styles from "./ProductInfoTitle.module.scss";
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
-export default function ProductInfoTitle({ title = [] }) {
+export default function ProductInfoTitle({ text = [] }) {
   return (
     <div className={`${styles["product-info-title"]}`}>
       <Typography className={styles.title} variant="h1">
-        {title}
+        {text}
       </Typography>
     </div>
   );

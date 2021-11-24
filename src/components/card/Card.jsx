@@ -40,7 +40,7 @@ export default function Card({
     >
       <CardHeader
         avatar={
-          <Avatar size={33} url={user.avatarUrl} verified={user.verified} />
+          <Avatar size={33} url={user.avatar.url} verified={user.verified} />
         }
       ></CardHeader>
       {timeLeft ? (

@@ -3,12 +3,11 @@ import { useState } from "react";
 import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 
-export default function Trending({ cards = [] }) {
-  
-  const [time, setTime] = useState("");
+export default function Trending({ cards = [], trendingMenu }) {
+  const [valueMenu, setValueMenu] = useState("");
 
   const selectMenuHandler = (e) => {
-    setTime(e.target.value);
+    setValueMenu(e.target.value);
   };
 
   return (
@@ -21,21 +20,33 @@ export default function Trending({ cards = [] }) {
           <Grid item>
             <Select
               style={{ width: 220, height: 50 }}
-              value={time}
+              value={0}
               onChange={selectMenuHandler}
+
               displayEmpty
             >
-              <MenuItem value="">This week</MenuItem>
-              <MenuItem value={10}>Today</MenuItem>
-              <MenuItem value={20}>This month</MenuItem>
-              <MenuItem value={30}>This year</MenuItem>
+              <MenuItem value={0}>This week</MenuItem>
+              {trendingMenu.map((item, idx) => {
+              return <MenuItem value={item.value} key={idx}>{item.label}</MenuItem>
+              })}
+            
+             
             </Select>
           </Grid>
         </Grid>
         <Grid container spacing={2} item className={styles.cards} xl>
           {cards.map((card) => (
             <Grid item xs={3} md={3}>
-              <Card trending {...card} key={card.key} />
+              <Card
+                trending
+                name={card.name}
+                user={card.owner}
+                mediaUrl={card.source.url}
+                likes={card.likes}
+                price={card.price}
+                currency={card.currency}
+                key={card.id}
+              />
             </Grid>
           ))}
         </Grid>

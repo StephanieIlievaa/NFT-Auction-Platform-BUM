@@ -6,7 +6,6 @@ import How from "../src/components/how/How.jsx";
 import Auctions from "../src/components/auctions/Auctions.jsx";
 import Footer from "../src/components/footer/Footer.jsx";
 import { useState, useEffect } from "react";
-import dataFeatured from "../data/featured.json";
 import dataHow from "../data/how.json";
 import dataCollectors from "../data/users.json";
 import dataNfts from "../data/nfts.json";
@@ -15,14 +14,24 @@ import Grid from "@mui/material/Grid";
 
 export default function Home() {
   const [featuredCards, setFeaturedCards] = useState([]);
-  useEffect(() => {
-    setFeaturedCards(dataFeatured);
-  });
 
-  const [nfts, setNfts] = useState([]);
-  useEffect(() => {
-    setNfts(dataNfts);
-  });
+  useEffect(async () => {
+    let dataFeatured = await fetch(process.env.apiUrl + "/featured").then(
+      (res) => res.json()
+    );
+
+    setFeaturedCards(dataFeatured);
+  }, []);
+
+  const [trending, setTrending] = useState([]);
+  const [trendingMenu, setTrendingMenu] = useState([]);
+  useEffect(async () => {
+    let dataNfts = await fetch(process.env.apiUrl + "/" + "trending").then(
+      (res) => res.json()
+    );
+    setTrending(dataNfts);
+    setTrendingMenu(dataNfts);
+  }, []);
 
   const [topCollectors, setTopCollectors] = useState([]);
   useEffect(() => {
@@ -39,12 +48,12 @@ export default function Home() {
       <Grid container justifyContent="center">
         <Grid item>
           <Header />
-          <Featured items={featuredCards.cards} />
+          <Featured items={featuredCards?.nfts} />
 
-          <Trending cards={nfts.cards} />
+          <Trending cards={trending?.nfts} trendingMenu={trendingMenu?.filters?.sort} />
           <TopCollectors collectors={topCollectors}></TopCollectors>
           <How {...HowSteps.how} />
-          <Auctions cards={nfts.liveCards} />
+          <Auctions />
 
           <Footer />
         </Grid>
@@ -52,4 +61,3 @@ export default function Home() {
     </Container>
   );
 }
-
