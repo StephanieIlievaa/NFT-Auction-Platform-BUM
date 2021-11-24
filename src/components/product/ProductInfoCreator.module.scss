@@ -1,23 +1,44 @@
 @use "../../styles/colors";
 
 .product-info-creator {
-    background-color: colors.$background_paper;
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    font-family: 'Monsterrat';
-    border-radius: 15px;
-    padding: 5px;
+  background-color: colors.$background_paper;
+  position: relative;
+  width: 340px;
+  height: 118px;
+  top: 79px;
+  left: 69px;
+  border-radius: 15px;
 }
 
 .title {
-    background-color: colors.$primary_main;
-    padding-left: 20px;
-    font-family: 'Monsterrat';
-}
+  color: colors.$text_secondary;
+  font-family: "Monsterrat";
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  line-height: 22px;
+  left: 27px;
+  top: 5px;
 
+}
+.creatorContainer {
+  position: relative;
+  width: 340px;
+  height: 37px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: rgb(78, 36, 242, 10%);
+}
 .user-container {
-    background-color: colors.$background_paper;
-    font-family: 'Monsterrat';
-    display:flex;
+  font-family: "Monsterrat";
+  position: relative;
+  width: 39px;
+  height: 39px;
+  left: 27px;
+  top: 19px;
+  font-style:normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 900;
+  
 }

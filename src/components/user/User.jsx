@@ -12,7 +12,7 @@ export default function User({
   //Items
   return (
     <div className={styles.user}>
-      <Avatar verified={verified} url={avatar} size={size}></Avatar>
+      <Avatar verified={verified} url={avatar} size={size} ></Avatar>
       <Box className={styles.wrapper}>
         <div className={styles.name}>{name}</div>
         <div className={styles.info}>{info} </div>
