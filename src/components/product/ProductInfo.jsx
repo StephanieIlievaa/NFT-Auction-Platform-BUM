@@ -20,7 +20,7 @@ export default function ProductInfo({
   return (
     <div className={styles.wrapper}>
       <div className={`${styles["product-info"]}`}>
-        <ProductInfoTitle title={title} />
+        <ProductInfoTitle text={title} />
         <ProductInfoPrice amount={price} currency={currency}/>
         <ProductInfoStatus isLive={isLive}/>
         <ProductInfoLikes amount={likes}/>
