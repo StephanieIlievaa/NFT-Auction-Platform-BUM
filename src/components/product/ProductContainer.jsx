@@ -9,7 +9,7 @@ export default function ProductContainer({
   owner,
   price = 3,
   currency ='ETH',
-  likes= 1100,
+  likes= 1300,
   auction_end = true,
   details,
   bids,
