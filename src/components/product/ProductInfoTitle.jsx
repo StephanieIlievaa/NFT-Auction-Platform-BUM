@@ -7,7 +7,7 @@ export default function ProductInfoTitle({ text = [] }) {
       <Typography className={styles.title} variant="h1">
         {text}
       </Typography>
-      <hr className={styles.line} />  
+      {/* <hr className={styles.line} />   */}
     </div>
   );
 }

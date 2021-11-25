@@ -15,31 +15,28 @@ export default function ProductContainer({
   price = 3,
   currency = "ETH",
   likes = 1300,
-  auction_end = "",
-  details ="Explicabo saepe unde et culpa placeat quam saepe praesentium doloribus. Aliquam eum vitae voluptas adipisci.",
+  auction_end = "2022-10-11T12:04:48.511Z",
+  details = "Explicabo saepe unde et culpa placeat quam saepe praesentium doloribus. Aliquam eum vitae voluptas adipisci.",
   bids,
   source = "https://s3-alpha-sig.figma.com/img/5700/961d/873ed585dda6af33c56c3e41f33c9c2b?Expires=1638144000&Signature=ZWUd1hrG9OIlbvmcltFV7maszJObLjtULkpt0t0CV7~Gj9nAfS2Ef3r6oaOY9aGJbTJu5kd4WebJX1LPv2Apo~VSx56u1MfgS-ltnMKOZTnv6St1hxdTxcGViTxqhQtbkSJUdpyZVZCPUtfqQiXR~JesFf0~3-oTdrKGsdfPo9KRKnH3v7Ks3xyXRQB2K6e9AdP40cnktBog-hN9vefW1OkGJJfSCOaQH37k8RWYjIqa6DmYhKst4dHVrQV9uPtdQBPA6Q~H7QOfvH3s1gjOOhrQ81p~hvaue5ySJVXH47cNVnshMUWavYa-Nufl5vwu9eIPJbCUnF0hQQ63BGYdVg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
 }) {
   return (
-    <div className={`${styles["product-container"]}`}>
-      <Grid container className={styles.container}>
-        <Grid item sm={12} lg={6}>
-          <ProductImage url={source} />
-        </Grid>
-        <Grid item sm={12} lg={6}>
-          <ProductInfo
-            title={name}
-            price={price}
-            currency={currency}
-            isLive={auction_end ? true : false}
-            timeEnd={auction_end}
-            onTimeEnd
-            likes={likes}
-            creator={owner}
-          ></ProductInfo>
-        </Grid>
+    <Grid container className={`${styles["product-container"]}`}>
+      <Grid item sm={12} lg={6}>
+        <ProductImage url={source} />
       </Grid>
-      <Grid></Grid>
-    </div>
+      <Grid sx={{ px: 5 }} item sm={12} lg={6}>
+        <ProductInfo
+          title={name}
+          price={price}
+          currency={currency}
+          isLive={auction_end ? true : false}
+          timeEnd={auction_end}
+          onTimeEnd={"auction ended"}
+          likes={likes}
+          creator={owner}
+        />
+      </Grid>
+    </Grid>
   );
 }
