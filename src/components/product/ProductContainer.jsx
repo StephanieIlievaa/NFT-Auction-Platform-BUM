@@ -22,15 +22,15 @@ export default function ProductContainer({
 }) {
   return (
     <Grid container className={`${styles["product-container"]}`}>
-      <Grid item sm={12} lg={6}>
+      <Grid item sm={6} lg={6}>
         <ProductImage url={source} />
       </Grid>
-      <Grid sx={{ px: 5 }} item sm={12} lg={6}>
+      <Grid sx={{ px: 5 }} item sm={5} lg={5}>
         <ProductInfo
           title={name}
           price={price}
           currency={currency}
-          isLive={auction_end ? true : false}
+          isLive={auction_end}
           timeEnd={auction_end}
           onTimeEnd={"auction ended"}
           likes={likes}
