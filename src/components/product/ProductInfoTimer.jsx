@@ -5,11 +5,17 @@ import Countdown from "react-countdown";
 import React, { useState, useEffect } from "react";
 
 export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
-  const timer = <Countdown className={styles.active} date={timeEnd} children={<div>{onTimeEnd}</div>} />;
+  const timer = (
+    <Countdown
+      className={styles.active}
+      date={timeEnd}
+      children={<div>{onTimeEnd}</div>}
+    />
+  );
   const [time, setTime] = useState(false);
 
   const setTimer = () => {
-    if (timeEnd !== "") {
+    if (timeEnd !== null) {
       setTime(true);
     } else {
       setTime(false);
@@ -23,22 +29,23 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
     setTimer();
   }, [timer]);
 
+  const component = (
+    <div className={styles.timer}>
+      <div className={styles.title}>
+        <label >
+          <span>ENDS IN</span>
+        </label>
+      </div>
+      <div className={styles.timerWrapper}>{timer}</div>
+    </div>
+  );
+
   return (
-    <div
-      onChange={onTimeEnd}
-      className={time ? styles["product-info-timer"] : styles["color-gray"]}
-    >
-      {time ? (
-        <>
-          <label className={styles.title}>
-            <h5>Ends in</h5>
-          </label>
-          <div className={styles.timer}>
-            <span>{timer}</span>
-          </div>
-        </>
+    <div className={styles["product-info-timer"]}>
+      {timeEnd ? (
+        component
       ) : (
-        <></>
+        <div style={{ display: "none" }} className={styles.timer}></div>
       )}
     </div>
   );

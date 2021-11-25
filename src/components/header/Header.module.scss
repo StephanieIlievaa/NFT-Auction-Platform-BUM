@@ -1,77 +1,76 @@
 @use "../../styles/colors";
 
 .wrapper {
-  padding: 21px;
-  background-color: #181828;
-  position: absolute;
-  height: 98px;
-  width: 1920px;
-  left: 0px;
-  top: 0px;
+  // padding: 21px;
+  // background-color: #181828;
+  // position: absolute;
+  // height: 98px;
+  // width: 1920px;
+  // left: 0px;
+  // top: 0px;
+  background-color: colors.$background_paper;
 }
 .container {
-  max-width: 81% !important;
-  
+  // max-width: 1320px;
 }
 
 .searchBar {
-  padding: 10px;
-  position: absolute;
-  left: 18.52%;
-  right: 44.27%;
-  top: 22.45%;
-  bottom: 25.51%;
-  width: 580px;
-  height: 51px;
-  border-radius: 30px;
+  // padding: 10px;
+  // position: absolute;
+  // left: 18.52%;
+  // right: 44.27%;
+  // top: 22.45%;
+  // bottom: 25.51%;
+  // width: 580px;
+  // height: 51px;
+  // border-radius: 30px;
 }
 
 .logo {
-  position: absolute !important;
-    left: 124px;
-  
- 
-  top: 19px;
-  border-radius: 0px;
-  
+  // position: absolute !important;
+  //   left: 124px;
+
+  // top: 19px;
+  // border-radius: 0px;
 }
 .homeBtn {
+  // position: absolute;
+  // left: 62.22%;
+  // right: 28.49%;
+  // top: 30.8%;
+  // bottom: 42.86%;
 
-  position: absolute;
-  left: 62.22%;
-  right: 28.49%;
-  top: 30.8%;
-  bottom: 42.86%;
-  
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 17px;
 }
 
 .activityBtn {
-  position: absolute;
-  left: 64.32%;
-  right: 22.81%;
-  top: 39.8%;
-  bottom: 42.86%;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-  
+  //   position: absolute;
+  //   left: 64.32%;
+  //   right: 22.81%;
+  //   top: 39.8%;
+  //   bottom: 42.86%;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: 600;
+  // font-size: 14px;
+  // line-height: 17px;
 }
 
 .exploreBtn {
-  align-items: center;
-  padding: 20px 38px;
-  flex-direction: row;
-  position: absolute;
-  left: 67.32%;
-  right: 13.12%;
-  top: 22.45%;
-  bottom: 22.45%;
+  // align-items: center;
+  // padding: 20px 38px;
+  // flex-direction: row;
+  // position: absolute;
+  // left: 67.32%;
+  // right: 13.12%;
+  // top: 22.45%;
+  // bottom: 22.45%;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem;
+  background-color: #4e24f2;
 }
