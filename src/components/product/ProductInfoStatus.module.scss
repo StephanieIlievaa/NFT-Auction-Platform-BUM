@@ -8,13 +8,14 @@
 .status {
   width: 75px;
   height: 33px;
-  background-color: colors.$secondary_main !important;
-  border-radius: 7px !important;
+  
 }
 .chip {
   font-size: 14px;
   font-weight: bold;
   color: black;
   width: 75px;
+  background-color: colors.$secondary_main !important;
   height: 33px;
+  border-radius: 7px !important;
 }
