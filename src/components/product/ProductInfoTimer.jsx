@@ -5,7 +5,7 @@ import Countdown from "react-countdown";
 import React, { useState, useEffect } from "react";
 
 export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
-  const timer = <Countdown date={timeEnd} />;
+  const timer = <Countdown className={styles.active} date={timeEnd} children={<div>{onTimeEnd}</div>} />;
   const [time, setTime] = useState(false);
 
   const setTimer = () => {
@@ -30,9 +30,9 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
     >
       {time ? (
         <>
-          <div className={styles.title}>
+          <label className={styles.title}>
             <h5>Ends in</h5>
-          </div>
+          </label>
           <div className={styles.timer}>
             <span>{timer}</span>
           </div>
