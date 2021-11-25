@@ -22,9 +22,6 @@ export default function ProductInfoTimer({ timeEnd, onTimeEnd }) {
     }
   };
 
-  console.log(timeEnd);
-  console.log(onTimeEnd);
-
   useEffect(() => {
     setTimer();
   }, [timer]);

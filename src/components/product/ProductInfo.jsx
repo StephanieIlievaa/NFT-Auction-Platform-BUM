@@ -39,14 +39,14 @@ export default function ProductInfo({
         </Grid>
 
         <Grid  container>
-          <Grid sx={{pr: 2}} item xs={12} sm={12} md={6} lg={7}>
+          <Grid sx={{pr: 2}} item xs={7} sm={12} md={7} lg={7}>
             <ProductInfoCreator
               name={creator.name}
               avatar={creator.avatar}
               verified={creator.verified}
             />
           </Grid>
-          <Grid sx={{pl: 2}} item xs={12} sm={12} md={6} lg={5}>
+          <Grid sx={{pl: 2}} item xs={5} sm={5} md={5} lg={5}>
             <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} />
           </Grid>
         </Grid>
@@ -55,6 +55,7 @@ export default function ProductInfo({
       <Grid>
         <Stack className={styles.stats}></Stack>
       </Grid>
+      
     </div>
   );
 }
