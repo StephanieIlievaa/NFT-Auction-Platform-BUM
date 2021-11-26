@@ -1,6 +1,5 @@
 import styles from "./ProductInfoTimer.module.scss";
-import { formatDistance } from "date-fns";
-import { parseISO } from "date-fns";
+
 import Countdown from "react-countdown";
 import React, { useState, useEffect } from "react";
 

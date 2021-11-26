@@ -6,13 +6,13 @@ import { useState, useEffect } from "react";
 export default function ProductInfoStatus({ isLive }) {
 
   let statusLive = <Chip className={styles.chip} label="⬤ LIVE"></Chip>;
-  let liveComp = (
+  let liveComponent = (
     <div className={styles.status}>{isLive ? statusLive : <div></div>}</div>
   );
 
   const [live, setLive] = useState(false);
 
-  const setTimer = () => {
+  const setLiveComponent = () => {
     if (isLive !== null) {
       setLive(true);
     } else {
@@ -22,9 +22,9 @@ export default function ProductInfoStatus({ isLive }) {
 
 
   useEffect(() => {
-    setLive();
-  }, [liveComp]);
+    setLiveComponent();
+  }, [liveComponent]);
 
  
-  return <div className={`${styles["product-info-status"]}`}>{liveComp}</div>;
+  return <div className={`${styles["product-info-status"]}`}>{liveComponent}</div>;
 }
