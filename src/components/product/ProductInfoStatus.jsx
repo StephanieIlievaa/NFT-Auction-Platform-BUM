@@ -10,21 +10,6 @@ export default function ProductInfoStatus({ isLive }) {
     <div className={styles.status}>{isLive ? statusLive : <div></div>}</div>
   );
 
-  const [live, setLive] = useState(false);
-
-  const setLiveComponent = () => {
-    if (isLive !== null) {
-      setLive(true);
-    } else {
-      setLive(false);
-    }
-  };
-
-
-  useEffect(() => {
-    setLiveComponent();
-  }, [liveComponent]);
-
  
   return <div className={`${styles["product-info-status"]}`}>{liveComponent}</div>;
 }

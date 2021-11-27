@@ -32,30 +32,34 @@ export default function ProductInfo({
           <Grid item xs={4} md={6} lg={8}>
             <ProductInfoPrice amount={price} currency={currency} />
           </Grid>
-          <Grid sx={{ display: "flex", gap: "10px", justifyContent: 'flex-end' }} item xs={4} md={6} lg={4}>
-            <ProductInfoStatus isLive={isLive} />
+          <Grid
+            sx={{ display: "flex", gap: "10px", justifyContent: "flex-end" }}
+            item
+            xs={4}
+            md={6}
+            lg={4}
+          >
+            {isLive && <ProductInfoStatus isLive={isLive} />}
             <ProductInfoLikes amount={likes} />
           </Grid>
         </Grid>
 
-        <Grid  container>
-          <Grid sx={{pr: 2}} item xs={7} sm={12} md={7} lg={7}>
+        <Grid container>
+          <Grid sx={{ pr: 2 }} item xs={7} sm={12} md={7} lg={7}>
             <ProductInfoCreator
               name={creator.name}
               avatar={creator.avatar}
               verified={creator.verified}
             />
           </Grid>
-          <Grid sx={{pl: 2}} item xs={5} sm={5} md={5} lg={5}>
+          <Grid sx={{ pl: 2 }} item xs={5} sm={5} md={5} lg={5}>
             <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} />
           </Grid>
         </Grid>
-
       </Grid>
       <Grid>
         <Stack className={styles.stats}></Stack>
       </Grid>
-      
     </div>
   );
 }
