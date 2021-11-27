@@ -45,14 +45,14 @@ export default function ProductInfo({
         </Grid>
 
         <Grid container>
-          <Grid sx={{ pr: 2 }} item xs={7} sm={12} md={7} lg={7}>
+          <Grid sx={{ pr: 1 }} item xs={7} sm={12} md={7} lg={7}>
             <ProductInfoCreator
               name={creator.name}
               avatar={creator.avatar}
               verified={creator.verified}
             />
           </Grid>
-          <Grid sx={{ pl: 2 }} item xs={5} sm={5} md={5} lg={5}>
+          <Grid sx={{ pl: 1.5 }} item xs={5} sm={5} md={5} lg={5}>
             <ProductInfoTimer timeEnd={timeEnd} onTimeEnd={onTimeEnd} />
           </Grid>
         </Grid>
