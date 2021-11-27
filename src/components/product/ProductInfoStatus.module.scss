@@ -13,7 +13,7 @@
 .chip {
   font-size: 14px;
   font-weight: bold;
-  color: black;
+  color: black !important;
   width: 75px;
   background-color: colors.$secondary_main !important;
   height: 33px;
