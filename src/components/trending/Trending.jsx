@@ -4,7 +4,7 @@ import styles from "./Trending.module.scss";
 import { Container, Grid, Select, MenuItem } from "@mui/material";
 
 export default function Trending({ cards = [], trendingMenu }) {
-  const [valueMenu, setValueMenu] = useState("");
+  const [menu, setMenu] = useState("");
 
   const selectMenuHandler = (e) => {
     setValueMenu(e.target.value);
@@ -26,8 +26,8 @@ export default function Trending({ cards = [], trendingMenu }) {
               displayEmpty
             >
               <MenuItem value={0}>This week</MenuItem>
-              {trendingMenu.map((item, idx) => {
-              return <MenuItem value={item.value} key={idx}>{item.label}</MenuItem>
+              {trendingMenu.map(item => {
+              return <MenuItem value={item.value} key={item.value}>{item.label}</MenuItem>
               })}
             
              
