@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./Auctions.module.scss";
 
 
-export default function Auctions({cards = []}) {
+export default function Auctions({cards = [], menu}) {
     const [time, setTime] = useState("");
 
     const selectMenuHandler = (e) => {
@@ -26,17 +26,23 @@ export default function Auctions({cards = []}) {
                 onChange={selectMenuHandler}
                 displayEmpty
               >
-                <MenuItem value="">This week</MenuItem>
-                <MenuItem value={10}>Today</MenuItem>
-                <MenuItem value={20}>This month</MenuItem>
-                <MenuItem value={30}>This year</MenuItem>
+               <MenuItem value={0}>This week</MenuItem>
+              {menu.map(item => {
+              return <MenuItem value={item.value} key={item.label}>{item.label}</MenuItem>
+              })}
               </Select>
             </Grid>
           </Grid>
           <Grid container spacing={2} item xl>
             {cards.map((card) => (
               <Grid className={styles.card}  item xs={3} md={3}>
-                <Card  key={card.key} {...card} />
+                <Card  name={card.name}
+                user={card.owner}
+                mediaUrl={card.source.url}
+                likes={card.likes}
+                price={card.price}
+                currency={card.currency}
+                key={card.id} />
               </Grid>
             ))}
           </Grid>

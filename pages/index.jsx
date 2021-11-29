@@ -26,11 +26,11 @@ export default function Home() {
   const [trending, setTrending] = useState([]);
   const [trendingMenu, setTrendingMenu] = useState([]);
   useEffect(async () => {
-    let dataNfts = await fetch(process.env.apiUrl + "/" + "trending").then(
+    let dataNfts = await fetch(process.env.apiUrl + "/trending").then(
       (res) => res.json()
     );
-    setTrending(dataNfts);
-    setTrendingMenu(dataNfts);
+    setTrending(dataNfts?.nfts);
+    setTrendingMenu(dataNfts?.nfts);
   }, []);
 
   const [topCollectors, setTopCollectors] = useState([]);
@@ -38,6 +38,20 @@ export default function Home() {
     setTopCollectors(dataCollectors);
   });
 
+const [auctions, setAuctions] = useState([]);
+const [auctionMenu, setAuctionMenu] = useState([]);
+
+useEffect(async() => {
+  await fetch(process.env.apiUrl + '/live-auctions')
+  .then(response => response.json())
+  .then(data => {
+    setAuctions(data.nfts);
+    setAuctionMenu(data.filters.price)
+  })
+  
+ 
+}, [])
+ 
   const [HowSteps, setHowSteps] = useState([]);
   useEffect(() => {
     setHowSteps(dataHow);
@@ -50,10 +64,10 @@ export default function Home() {
           <Header />
           <Featured items={featuredCards?.nfts} />
 
-          <Trending cards={trending?.nfts} trendingMenu={trendingMenu?.filters?.sort} />
+          <Trending cards={trending} trendingMenu={trendingMenu} />
           <TopCollectors collectors={topCollectors}></TopCollectors>
           <How {...HowSteps.how} />
-          <Auctions />
+          <Auctions cards={auctions} menu={auctionMenu}/>
 
           <Footer />
         </Grid>
