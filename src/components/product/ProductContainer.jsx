@@ -77,10 +77,10 @@ export default function ProductContainer({
 }) {
   return (
     <Grid container className={`${styles["product-container"]}`}>
-      <Grid item sx={6} sm={6} lg={6}>
+      <Grid item xs={6} sm={6} lg={6}>
         <ProductImage url={source} />
       </Grid>
-      <Grid item  sx={5}  sm={5} lg={5} sx={{ px: 5 }}>
+      <Grid item  xs={5}  sm={5} lg={5} sx={{ px: 5 }}>
         <ProductInfo
           title={name}
           price={price}
