@@ -76,7 +76,8 @@ export default function ProductContainer({
   onBid,
 }) {
   return (
-    <Grid container className={`${styles["product-container"]}`}>
+    <div className={`${styles["product-container"]}`}>
+    <Grid container >
       <Grid item xs={6} sm={6} lg={6}>
         <ProductImage url={source} />
       </Grid>
@@ -107,5 +108,6 @@ export default function ProductContainer({
         </Grid>
       </Grid>
     </Grid>
+    </div>
   );
 }
