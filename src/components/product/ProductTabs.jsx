@@ -47,9 +47,9 @@ export default function ProductTabs({ text, bids }) {
                       .sort((a, b) => b.amount - a.amount)
                       .map((user, i) => (
                         <TableRow key={i} 
-                        className={`{table-row-${i}}`}
+                        className={`table-row-${i}`}
                         sx={{
-                          backgroundColor: `${ i % 2 == 0 ? "#0F0D1F" : "#161035"}`
+                          backgroundColor: `${ i % 2 !== 0 ? "#161035" : "#0F0D1F"}`
                         }}
                         >
                           <TableCell align="right" >
@@ -59,7 +59,7 @@ export default function ProductTabs({ text, bids }) {
                               avatar={user.user.avatar}
                             />
                           </TableCell>
-                          <TableCell>{user.amount} ETH</TableCell>
+                          <TableCell sx={{color:'#24F25E' }}>{user.amount} ETH</TableCell>
                           <TableCell align="right">
                             {formatDistance(Date.now(), parseISO(user.date), {
                               includeSeconds: true,
