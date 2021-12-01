@@ -1,5 +1,5 @@
+import Grid from "@mui/material/Grid";
 import styles from "./ProductContainer.module.scss";
-import  Grid  from "@mui/material/Grid";
 import ProductImage from "./ProductImage.jsx";
 import ProductInfo from "./ProductInfo.jsx";
 import ProductTabs from "./ProductTabs.jsx";
@@ -80,7 +80,7 @@ export default function ProductContainer({
       <Grid item sx={6} sm={6} lg={6}>
         <ProductImage url={source} />
       </Grid>
-      <Grid sx={{ px: 5 }} sx={5} item sm={5} lg={5}>
+      <Grid item  sx={5}  sm={5} lg={5} sx={{ px: 5 }}>
         <ProductInfo
           title={name}
           price={price}
@@ -91,7 +91,7 @@ export default function ProductContainer({
           likes={likes}
           creator={owner}
         />
-        <Grid item  sm={12} lg={12}>
+        <Grid item sm={12} lg={12}>
           <ProductTabs text={details} bids={bids} />
         </Grid>
 
