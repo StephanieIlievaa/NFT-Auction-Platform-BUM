@@ -1,5 +1,5 @@
 import styles from "./ProductContainer.module.scss";
-import { Grid } from "@mui/material";
+import  Grid  from "@mui/material/Grid";
 import ProductImage from "./ProductImage.jsx";
 import ProductInfo from "./ProductInfo.jsx";
 import ProductTabs from "./ProductTabs.jsx";
