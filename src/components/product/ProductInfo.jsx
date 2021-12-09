@@ -47,9 +47,10 @@ export default function ProductInfo({
         <Grid container>
           <Grid sx={{ pr: 1 }} item xs={7} sm={12} md={7} lg={7}>
             <ProductInfoCreator
-              name={creator.name}
-              avatar={creator.avatar}
-              verified={creator.verified}
+              name={creator?.username}
+              avatar={creator?.avatar.url}
+              verified={creator?.verified}
+              id={creator?.id}
             />
           </Grid>
           <Grid sx={{ pl: 1.5 }} item xs={5} sm={5} md={5} lg={5}>

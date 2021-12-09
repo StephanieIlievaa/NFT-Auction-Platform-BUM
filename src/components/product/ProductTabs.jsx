@@ -16,7 +16,7 @@ import { parseISO } from "date-fns";
 import { NoEncryption } from "@mui/icons-material";
 
 
-export default function ProductTabs({ text, bids }) {
+export default function ProductTabs({ text = '', bids = [] }) {
   const [value, setValue] = useState("details");
 
   const handleChange = (event, newValue) => {
