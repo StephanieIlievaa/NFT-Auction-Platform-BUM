@@ -11,10 +11,10 @@ export default function SearchBar() {
       sx={{
         display: "flex",
         alignItems: "center",
-        width: 500,
+        width: 559,
         height: "50px",
         bgcolor: "black",
-        borderRadius: 10,
+        borderRadius: "25px",
       }}
     >
       <IconButton
@@ -26,7 +26,7 @@ export default function SearchBar() {
       </IconButton>
       <InputBase
         sx={{ ml: 1, flex: 1, color: "white" }}
-        placeholder="Find elements, users and activities"
+        placeholder="Find elements, users and activities..."
         inputProps={{ "aria-label": "Find elements, users and activities" }}
       ></InputBase>
     </Box>

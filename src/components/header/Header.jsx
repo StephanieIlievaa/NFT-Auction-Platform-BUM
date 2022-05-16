@@ -28,7 +28,7 @@ const ResponsiveAppBar = () => {
   // const handleOpenUserMenu = (event) => {
   //   setAnchorElUser(event.currentTarget);
   // };
-  
+
   // const handleCloseUserMenu = () => {
   //   setAnchorElUser(null);
   // };
@@ -38,9 +38,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar 
-    sx={{ mx: 'auto' }}
-    className={styles.wrapper} position="static">
+    <AppBar sx={{ mx: "auto" }} className={styles.wrapper} position="static">
       <Container className={styles.container} maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -72,18 +70,31 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
+                variant="outlined"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ m: 1, color: "#e1e1fc", display: "block" }}
               >
                 {page}
               </Button>
             ))}
             <Button
               className={styles.exploreBtn}
-              variant="contained"
-              sx={{ color: "#e1e1fc", justifyContent: "center" }}
+              variant="outlined"
+              sx={{ m: 1, display: "block" }}
             >
               Explore
+            </Button>
+            <Button
+              className={styles.signUpBtn}
+              variant="contained"
+              sx={{
+                m: 1,
+                color: "#e1e1fc",
+                backgroundColor: "white",
+                display: "block",
+              }}
+            >
+              Sign Up
             </Button>
           </Box>
         </Toolbar>
@@ -92,49 +103,3 @@ const ResponsiveAppBar = () => {
   );
 };
 export default ResponsiveAppBar;
-
-// import Container from "@mui/material/Container";
-// import Grid from "@mui/material/Grid";
-// import Logo from "../logo/Logo";
-// import Link from "../link/Link.jsx";
-// import styles from "./Header.module.scss";
-// import SearchBar from "../SearchBar/SearchBar";
-// import Button from "@mui/material/Button";
-
-// export default function Header() {
-//   return (
-//     <div className={styles.wrapper} >
-//       <Container className={styles.container} >
-//         <Grid container>
-//           <Grid item className={styles.logo}>
-//             <Logo />
-//           </Grid>
-//           <Grid item className={styles.searchBar}>
-//             <SearchBar />
-//           </Grid>
-//           <Grid item>
-//             <Button
-//               className={styles.homeBtn}
-//               component={Link}
-//               sx={{ color: "#e1e1fc" }}
-//               noLinkStyle
-//               href="/"
-//             >
-//               Home
-//             </Button>
-//             <Button className={styles.activityBtn} sx={{ color: "#e1e1fc" }}>
-//               Activity
-//             </Button>
-//             <Button
-//               className={styles.exploreBtn}
-//               variant="contained"
-//               sx={{ color: "#e1e1fc",justifyContent: 'center' }}
-//             >
-//               Explore
-//             </Button>
-//           </Grid>
-//         </Grid>
-//       </Container>
-//     </div>
-//   );
-// }
